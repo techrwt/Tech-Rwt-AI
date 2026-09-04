@@ -1,0 +1,47 @@
+name: Update Article Index
+
+# Runs automatically whenever a batch-*.json file is added/changed,
+# and regenerates data/articles-index.json + data/articles/manifest.json,
+# committing the result back to the repo.
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/articles/batch-*.json"
+  workflow_dispatch: {} # allows manual trigger from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run generate-index.js
+        run: node generate-index.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet -- data/articles-index.json data/articles/manifest.json; then
+            echo "No changes to index/manifest — nothing to commit."
+          else
+            git add data/articles-index.json data/articles/manifest.json
+            git commit -m "chore: auto-update articles-index.json and manifest.json [skip ci]"
+            git push
+          fi

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TECH RWT AI — आर्टिफिशियल इंटेलिजेंस की दुनिया</title>
+  <meta name="description" content="TECH RWT AI — AI टूल्स, एजेंट्स, मशीन लर्निंग और जनरेटिव AI से जुड़ी नवीनतम खबरें, ट्रेंड्स और ट्यूटोरियल हिंदी में।" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/welcome.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       WELCOME / INTRO SCREEN (homepage only — every visit)
+       ============================================ -->
+  <div class="welcome-overlay" id="welcome-overlay">
+    <div class="robot">
+      <div class="robot-antenna"></div>
+      <div class="robot-antenna-tip"></div>
+      <div class="robot-head">
+        <div class="robot-face">
+          <div class="robot-eye left"></div>
+          <div class="robot-eye right"></div>
+        </div>
+      </div>
+      <div class="robot-arm left"></div>
+      <div class="robot-arm right"></div>
+      <div class="robot-body"></div>
+    </div>
+    <div class="welcome-text-wrap">
+      <span class="welcome-typing" id="welcome-typing-text"></span><span class="welcome-cursor" id="welcome-cursor"></span>
+    </div>
+  </div>
+
+  <!-- ============================================
+       HEADER / NAVBAR
+       ============================================ -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo-wrap">
+        <span class="logo">
+          <span class="tech">TECH</span><span class="rwt">&nbsp;RWT&nbsp;</span><span class="ai">AI</span>
+        </span>
+        <span class="logo-tagline">आर्टिफिशियल इंटेलिजेंस की दुनिया</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">होम</a></li>
+          <li><a href="about.html">हमारे बारे में</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================
+       MAIN — Article Feed (populated by homepage.js in a later step)
+       ============================================ -->
+  <main class="container">
+    <section class="feed-section">
+      <h1 class="page-title">नवीनतम AI आर्टिकल्स</h1>
+      <div id="article-feed" class="article-grid">
+        <!-- Article cards will be injected here via JS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="tech">TECH</span><span class="rwt">&nbsp;RWT&nbsp;</span><span class="ai">AI</span>
+          </div>
+          <p>AI टूल्स, एजेंट्स, मशीन लर्निंग और जनरेटिव AI की दुनिया की नवीनतम खबरों का आपका भरोसेमंद स्रोत।</p>
+        </div>
+        <div class="footer-links">
+          <h4>मुख्य लिंक</h4>
+          <ul>
+            <li><a href="index.html">होम</a></li>
+            <li><a href="about.html">हमारे बारे में</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; <span id="footer-year"></span> TECH RWT AI. सर्वाधिकार सुरक्षित।
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/welcome.js"></script>
+  <script src="js/homepage.js"></script>
+  <script>
+    document.getElementById("footer-year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
