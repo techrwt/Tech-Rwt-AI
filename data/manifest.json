@@ -1,7 +1,8 @@
 {
   "batchFiles": [
-    "batch-1.json"
+    "batch-1.json",
+    "batch-2.json"
   ],
-  "totalArticles": 1,
-  "lastUpdated": "2026-10-16T11:56:33.964Z"
+  "totalArticles": 2,
+  "lastUpdated": "2026-10-16T12:31:22.480Z"
 }
