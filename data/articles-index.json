@@ -20,7 +20,9 @@
     "excerpt": "Google ने Gemini 4 Argon को अब Pro और Ultra subscribers और developers के लिए खोल दिया है। हम बता रहे हैं कि ये कहाँ मिलेगा, API का हिसाब कैसा बैठेगा और India के user को अभी क्या करना चाहिए।",
     "batch": 2,
     "readingTime": 5,
-    "url": "articles/gemini-4-argon-access-pricing-features.html"
+    "url": "articles/gemini-4-argon-access-pricing-features.html",
+    "imageFull": "assets/img/gemini-4-argon-google-ai-model.png",
+    "imageCard": "assets/img/gemini-4-argon-google-ai-model.png"
   },
   {
     "id": "art-0001",
@@ -43,6 +45,8 @@
     "excerpt": "जनरेटिव AI ऐसी तकनीक है जो नई सामग्री रचती है। जानिए यह कैसे काम करता है, कहाँ काम आता है और किन बातों का ध्यान रखना चाहिए।",
     "batch": 1,
     "readingTime": 4,
-    "url": "articles/generative-ai-kya-hai.html"
+    "url": "articles/generative-ai-kya-hai.html",
+    "imageFull": "assets/img/placeholder.png",
+    "imageCard": "assets/img/placeholder.png"
   }
 ]
