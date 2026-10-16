@@ -111,6 +111,26 @@ function validate(a, file) {
   return ok;
 }
 
+// लेख के अंदर के लिंक: सिर्फ़ /articles/slug.html जैसे अंदरूनी लिंक, और वो slug सच में मौजूद हो
+function checkLinks(items) {
+  const slugs = new Set(items.map((it) => it.article.slug));
+  for (const it of items) {
+    const a = it.article;
+    const re = /<a\b[^>]*?href\s*=\s*["']([^"']*)["']/gi;
+    let m;
+    let count = 0;
+    while ((m = re.exec(a.content))) {
+      count++;
+      const h = m[1];
+      const mm = /^\/articles\/([a-z0-9-]+)\.html$/.exec(h);
+      if (!mm) fail(it.file + ': लिंक "' + h + '" गलत है – सिर्फ़ /articles/slug.html जैसे अंदरूनी लिंक चलेंगे');
+      else if (!slugs.has(mm[1])) fail(it.file + ': लिंक "' + h + '" का लेख मौजूद नहीं है (slug "' + mm[1] + '" नहीं मिला)');
+      else if (mm[1] === a.slug) fail(it.file + ': लेख खुद को ही लिंक कर रहा है');
+    }
+    if (count > 6) fail(it.file + ': ' + count + ' लिंक हैं, 2 से 4 काफ़ी हैं (6 से ज़्यादा spammy लगते हैं)');
+  }
+}
+
 function checkDuplicates(items) {
   const ids = new Map();
   const slugs = new Map();
@@ -265,6 +285,7 @@ function renderArticle(a, all) {
 function main() {
   const items = loadBatches();
   checkDuplicates(items);
+  checkLinks(items);
   if (errors.length) die();
 
   const articles = items.map((it) => {
