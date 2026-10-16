@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://techrwt.github.io/Tech-Rwt-AI/sitemap.xml
+Sitemap: https://techrawatai.sbs/sitemap.xml
