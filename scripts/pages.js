@@ -46,7 +46,10 @@ function simplePage(o) {
   });
 }
 
-function buildStaticPages() {
+const HOME_PER = 9; // होम पर पहले से HTML में छपने वाले लेख (app.js का PER भी यही)
+
+function buildStaticPages(articles) {
+  articles = articles || [];
   // ---------- होम ----------
   const homeMain =
     '<section class="container hero fade-in">' +
@@ -57,9 +60,13 @@ function buildStaticPages() {
     '</section>' +
     '<section class="container feed" aria-labelledby="feed-title">' +
     '<h2 id="feed-title" class="section-title">ताज़ा लेख</h2>' +
-    '<div class="grid" id="feed"><p class="muted" id="feed-status">लेख लोड हो रहे हैं…</p></div>' +
-    '<div class="load-more-wrap"><button id="load-more" class="btn btn-primary" type="button" hidden>और दिखाओ</button></div>' +
-    '<noscript><p class="muted">लेख देखने के लिए कृपया अपने ब्राउज़र में JavaScript चालू करें।</p></noscript>' +
+    '<div class="grid" id="feed" data-prerendered="' + Math.min(HOME_PER, articles.length) + '">' +
+    (articles.length
+      ? articles.slice(0, HOME_PER).map((a, i) => L.card(a, '', 'h3', { first: i === 0, static: true })).join('')
+      : '<p class="muted">अभी कोई लेख नहीं है। जल्द ही नए लेख आएँगे।</p>') +
+    '</div>' +
+    '<div class="load-more-wrap"><button id="load-more" class="btn btn-primary" type="button"' +
+    (articles.length > HOME_PER ? '' : ' hidden') + '>और दिखाओ</button></div>' +
     '</section>';
 
   write('index.html', L.renderPage({

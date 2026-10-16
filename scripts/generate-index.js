@@ -162,7 +162,7 @@ function renderArticle(a, all) {
   const url = SITE + '/articles/' + a.slug + '.html';
   const root = '../';
   const { h1, body } = splitH1(a.content);
-  const imgAbs = L.abs(a.image);
+  const imgAbs = L.abs(L.variants(a.image).og);
   const published = String(a.date).slice(0, 10);
   const wordCount = a.content.replace(/<[^>]*>/g, ' ').split(/\s+/).filter(Boolean).length;
 
@@ -191,8 +191,8 @@ function renderArticle(a, all) {
     '<time datetime="' + L.esc(published) + '">' + L.esc(L.formatDate(a.date)) + '</time>' +
     '<span class="dot" aria-hidden="true"></span><span>' + a.readingTime + ' मिनट में पढ़ें</span></p>' +
     '</header>' +
-    '<figure class="article-figure fade-in"><img src="' + L.esc(L.rel(root, a.image)) + '" alt="' + L.esc(a.title) +
-    '" width="1200" height="630" loading="lazy" decoding="async">' +
+    '<figure class="article-figure fade-in"><img src="' + L.esc(L.rel(root, L.variants(a.image).full)) + '" alt="' + L.esc(a.title) +
+    '" width="1200" height="630" fetchpriority="high" decoding="async">' +
     '<figcaption>चित्र: ' + L.esc(a.imageCredit) + '</figcaption></figure>' +
     '<aside class="keypoints fade-in" aria-labelledby="kp-title"><h2 id="kp-title">मुख्य बातें</h2><ul>' +
     a.keyPoints.map((p) => '<li>' + L.esc(p) + '</li>').join('') + '</ul></aside>' +
@@ -273,6 +273,9 @@ function main() {
     const copy = Object.assign({}, a);
     delete copy.content;
     copy.url = 'articles/' + a.slug + '.html';
+    const v = L.variants(a.image); // app.js (और खोज) कार्ड में हल्की webp दिखाए
+    copy.imageFull = v.full;
+    copy.imageCard = v.card;
     return copy;
   });
   fs.writeFileSync(path.join(ROOT, 'data', 'articles-index.json'), JSON.stringify(index, null, 2) + '\n');
@@ -296,7 +299,7 @@ function main() {
   }
 
   // स्थिर पेज (SITE_URL बदलने पर canonical भी ठीक रहें)
-  buildStaticPages();
+  buildStaticPages(articles);
 
   // 5. sitemap.xml + robots.txt
   const latest = articles.length ? String(articles[0].date).slice(0, 10) : new Date().toISOString().slice(0, 10);

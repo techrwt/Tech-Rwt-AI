@@ -1,5 +1,7 @@
 'use strict';
 
+const fs = require('fs');
+const path = require('path');
 const cfg = require('./config');
 
 const SITE = String(cfg.SITE_URL).replace(/\/+$/, '');
@@ -34,6 +36,23 @@ function abs(p) {
 function rel(root, p) {
   if (/^https?:\/\//i.test(p)) return p;
   return root + String(p).replace(/^\/+/, '');
+}
+
+/**
+ * तस्वीर के वेरिएंट: PNG/JPG के पास scripts/optimize_images.py ने जो .webp बनाई हैं वो ढूँढता है।
+ * नहीं मिलीं तो मूल फ़ाइल ही इस्तेमाल होती है (साइट कभी टूटती नहीं)।
+ *   full = लेख पेज की तस्वीर, card = छोटा कार्ड-साइज़, og = सोशल शेयर वाली छोटी JPG
+ */
+function variants(p) {
+  const clean = String(p || '').replace(/^\/+/, '');
+  if (!clean || /^https?:\/\//i.test(clean)) return { full: p, card: p, og: p, split: false };
+  const m = /^(.*)\.(png|jpe?g)$/i.exec(clean);
+  if (!m) return { full: clean, card: clean, og: clean, split: false };
+  const has = (f) => fs.existsSync(path.join(__dirname, '..', f));
+  const full = has(m[1] + '.webp') ? m[1] + '.webp' : clean;
+  const card = has(m[1] + '-600.webp') ? m[1] + '-600.webp' : full;
+  const og = has(m[1] + '-og.jpg') ? m[1] + '-og.jpg' : clean;
+  return { full, card, og, split: card !== full };
 }
 
 function ld(obj) {
@@ -163,7 +182,7 @@ function welcome() {
 function renderPage(o) {
   const root = o.root;
   const robots = o.robots || 'index, follow, max-image-preview:large';
-  const image = abs(o.image || cfg.DEFAULT_IMAGE);
+  const image = abs(variants(o.image || cfg.DEFAULT_IMAGE).og);
   const imageAlt = o.imageAlt || cfg.SITE_NAME;
   const noindex = /noindex/.test(robots);
 
@@ -216,13 +235,19 @@ function renderPage(o) {
     '</body>\n</html>\n';
 }
 
-/** लेख-कार्ड (JS वाले कार्ड जैसा ही markup) */
-function card(a, root, level) {
+/** लेख-कार्ड (JS वाले कार्ड जैसा ही markup). opts.first = पहला कार्ड (LCP) – eager लोड, opts.static = एनिमेशन नहीं */
+function card(a, root, level, opts) {
   const h = level || 'h3';
-  return '<article class="card">' +
+  const o = opts || {};
+  const v = variants(a.image);
+  const srcset = v.split
+    ? ' srcset="' + esc(rel(root, v.card)) + ' 600w, ' + esc(rel(root, v.full)) + ' 1200w" sizes="(min-width: 960px) 360px, (min-width: 600px) 50vw, 100vw"'
+    : '';
+  const loading = o.first ? 'fetchpriority="high" decoding="async"' : 'loading="lazy" decoding="async"';
+  return '<article class="card' + (o.static ? ' is-static' : '') + '">' +
     '<a class="card-link" href="' + esc(root + 'articles/' + a.slug + '.html') + '">' +
-    '<div class="card-media"><img src="' + esc(rel(root, a.image)) + '" alt="' + esc(a.title) +
-    '" width="1200" height="630" loading="lazy" decoding="async"></div>' +
+    '<div class="card-media"><img src="' + esc(rel(root, v.card)) + '"' + srcset + ' alt="' + esc(a.title) +
+    '" width="1200" height="630" ' + loading + '></div>' +
     '<div class="card-body"><p class="card-meta"><time datetime="' + esc(String(a.date).slice(0, 10)) + '">' +
     esc(formatDate(a.date)) + '</time><span class="dot" aria-hidden="true"></span><span>' + a.readingTime + ' मिनट</span></p>' +
     '<' + h + ' class="card-title">' + esc(a.title) + '</' + h + '>' +
@@ -232,5 +257,5 @@ function card(a, root, level) {
 
 module.exports = {
   cfg, SITE, esc, formatDate, abs, rel, ld, href, header, footer, renderPage,
-  orgNode, websiteNode, card, NAV, FOOT,
+  orgNode, websiteNode, card, variants, NAV, FOOT,
 };
