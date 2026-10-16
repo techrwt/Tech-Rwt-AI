@@ -50,8 +50,9 @@ function buildStaticPages() {
   // ---------- होम ----------
   const homeMain =
     '<section class="container hero fade-in">' +
-    '<p class="badge">AI की दुनिया, हिंदी में</p>' +
+    '<div class="hero-box">' +
     '<h1 class="hero-title">AI की हर नई बात, सीधी और सरल हिंदी में</h1>' +
+    '</div>' +
     '<p class="lead">आर्टिफिशियल इंटेलिजेंस, चैटबॉट और नई तकनीक के बारे में साफ़ भाषा में लिखे गए लेख, ताकि हर पाठक आराम से समझ सके।</p>' +
     '</section>' +
     '<section class="container feed" aria-labelledby="feed-title">' +

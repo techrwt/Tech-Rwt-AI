@@ -56,13 +56,32 @@ function href(root, file) {
   return file === 'index.html' ? (root || './') : root + file;
 }
 
+// लोगो: assets/img/logo.png (नया लोगो बदलना हो तो बस यही फ़ाइल बदलें)
+const LOGO_FILE = 'assets/img/logo.png';
+const FAVICON_FILE = 'assets/img/logo.svg';
+
+function logoSize() {
+  try {
+    const b = require('fs').readFileSync(require('path').join(__dirname, '..', LOGO_FILE));
+    return { w: b.readUInt32BE(16), h: b.readUInt32BE(20) };
+  } catch (e) {
+    return { w: 640, h: 157 };
+  }
+}
+
+function logoImg(root, cls) {
+  const s = logoSize();
+  return '<img class="' + cls + '" src="' + esc(root + LOGO_FILE) + '" alt="' + esc(cfg.SITE_NAME) +
+    '" width="' + s.w + '" height="' + s.h + '" decoding="async">';
+}
+
 function orgNode() {
   return {
     '@type': 'Organization',
     '@id': SITE + '/#organization',
     name: cfg.SITE_NAME,
     url: SITE + '/',
-    logo: { '@type': 'ImageObject', url: abs(cfg.LOGO) },
+    logo: { '@type': 'ImageObject', url: abs(LOGO_FILE) },
   };
 }
 
@@ -88,7 +107,7 @@ function header(root, active) {
   ).join('');
   return '<header class="site-header"><div class="container header-inner">' +
     '<a class="brand" href="' + esc(href(root, 'index.html')) + '" aria-label="' + esc(cfg.SITE_NAME) + ' होम">' +
-    '<span class="logo-mark" aria-hidden="true">TR</span><span class="brand-name">' + esc(cfg.SITE_NAME) + '</span></a>' +
+    logoImg(root, 'brand-logo') + '</a>' +
     '<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="मेन्यू खोलें">' +
     '<span></span><span></span><span></span></button>' +
     '<nav id="site-nav" class="site-nav" aria-label="मुख्य मेन्यू">' + links + '</nav>' +
@@ -100,8 +119,8 @@ function footer(root) {
     '<li><a href="' + esc(href(root, f)) + '">' + label + '</a></li>'
   ).join('');
   return '<footer class="site-footer"><div class="container footer-inner">' +
-    '<div class="footer-brand"><a class="brand" href="' + esc(href(root, 'index.html')) + '">' +
-    '<span class="logo-mark" aria-hidden="true">TR</span><span class="brand-name">' + esc(cfg.SITE_NAME) + '</span></a>' +
+    '<div class="footer-brand"><a class="brand" href="' + esc(href(root, 'index.html')) + '" aria-label="' + esc(cfg.SITE_NAME) + ' होम">' +
+    logoImg(root, 'brand-logo') + '</a>' +
     '<p>' + esc(cfg.SITE_TAGLINE) + '।</p></div>' +
     '<nav class="footer-links" aria-label="फ़ुटर लिंक"><ul>' + links + '</ul></nav>' +
     '</div><div class="container footer-copy"><p>© <span data-year>' + new Date().getFullYear() +
@@ -171,7 +190,7 @@ function renderPage(o) {
     '<meta name="twitter:image" content="' + esc(image) + '">',
     '<meta name="twitter:image:alt" content="' + esc(imageAlt) + '">',
     o.extraHead || '',
-    '<link rel="icon" href="' + esc(root + cfg.LOGO) + '" type="image/svg+xml">',
+    '<link rel="icon" href="' + esc(root + FAVICON_FILE) + '" type="image/svg+xml">',
     '<link rel="preconnect" href="https://fonts.googleapis.com">',
     '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
     '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap">',
