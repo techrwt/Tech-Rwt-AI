@@ -35,7 +35,7 @@ function simplePage(o) {
       L.orgNode(),
       L.websiteNode(),
       {
-        '@type': 'WebPage',
+        '@type': o.type || 'WebPage',
         '@id': SITE + '/' + o.file + '#webpage',
         url: SITE + '/' + o.file,
         name: o.title,
@@ -108,6 +108,7 @@ function buildStaticPages(articles) {
   // ---------- हमारे बारे में ----------
   write('about.html', simplePage({
     file: 'about.html',
+    type: 'AboutPage',
     page: 'about',
     active: 'about.html',
     title: 'हमारे बारे में – ' + cfg.SITE_NAME,
@@ -149,7 +150,14 @@ function buildStaticPages(articles) {
     active: 'contact.html',
     page: 'contact',
     main: contactMain,
-    jsonld: graph([L.orgNode(), L.websiteNode()]),
+    jsonld: graph([L.orgNode(), L.websiteNode(), {
+      '@type': 'ContactPage',
+      '@id': SITE + '/contact.html#webpage',
+      url: SITE + '/contact.html',
+      name: 'संपर्क – ' + cfg.SITE_NAME,
+      inLanguage: 'hi-IN',
+      isPartOf: { '@id': SITE + '/#website' },
+    }]),
   }));
 
   // ---------- गोपनीयता नीति ----------
