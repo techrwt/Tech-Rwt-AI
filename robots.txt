@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-username.github.io/tech-rwt-ai/sitemap.xml
+Sitemap: https://techrwt.github.io/Tech-Rwt-AI/sitemap.xml
