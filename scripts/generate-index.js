@@ -185,7 +185,12 @@ function related(a, all) {
 function renderArticle(a, all) {
   const url = SITE + '/articles/' + a.slug + '.html';
   const root = '../';
-  const { h1, body } = splitH1(a.content);
+  const { h1, body: rawBody } = splitH1(a.content);
+  const body = rawBody;
+  // structured data में समय-क्षेत्र (IST) के साथ तारीख, जैसा Google सुझाता है
+  // credit में लिखा "(प्लेसहोल्डर चित्र)" साइट पर नहीं दिखाते
+  const credit = String(a.imageCredit).replace(/\s*[(（][^)）]*(प्लेसहोल्डर|placeholder)[^)）]*[)）]/gi, '').trim();
+  const iso = (d) => (/^\d{4}-\d{2}-\d{2}$/.test(String(d)) ? d + 'T00:00:00+05:30' : String(d));
   const imgAbs = L.abs(L.variants(a.image).og);
   const published = String(a.date).slice(0, 10);
   const modified = String(a.updated || a.date).slice(0, 10);
@@ -220,7 +225,7 @@ function renderArticle(a, all) {
     '</header>' +
     '<figure class="article-figure fade-in"><img src="' + L.esc(L.rel(root, L.variants(a.image).full)) + '" alt="' + L.esc(a.title) +
     '" width="1200" height="630" fetchpriority="high" decoding="async">' +
-    '<figcaption>चित्र: ' + L.esc(a.imageCredit) + '</figcaption></figure>' +
+    (credit ? '<figcaption>चित्र: ' + L.esc(credit) + '</figcaption>' : '') + '</figure>' +
     '<aside class="keypoints fade-in" aria-labelledby="kp-title"><h2 id="kp-title">मुख्य बातें</h2><ul>' +
     a.keyPoints.map((p) => '<li>' + L.esc(p) + '</li>').join('') + '</ul></aside>' +
     '<div class="prose">' + body + '</div>' +
@@ -244,9 +249,11 @@ function renderArticle(a, all) {
         headline: a.title,
         description: a.searchDescription,
         image: [imgAbs],
-        datePublished: a.date,
-        dateModified: a.updated || a.date,
-        author: { '@type': isOrg ? 'Organization' : 'Person', name: a.author },
+        datePublished: iso(a.date),
+        dateModified: iso(a.updated || a.date),
+        author: isOrg
+          ? { '@type': 'Organization', name: a.author, url: SITE + '/about.html' }
+          : { '@type': 'Person', name: a.author },
         publisher: { '@id': SITE + '/#organization' },
         mainEntityOfPage: { '@type': 'WebPage', '@id': url },
         isPartOf: { '@id': SITE + '/#website' },
@@ -275,8 +282,8 @@ function renderArticle(a, all) {
     main,
     jsonld,
     extraHead:
-      '<meta property="article:published_time" content="' + L.esc(a.date) + '">' +
-      '<meta property="article:modified_time" content="' + L.esc(a.updated || a.date) + '">' +
+      '<meta property="article:published_time" content="' + L.esc(iso(a.date)) + '">' +
+      '<meta property="article:modified_time" content="' + L.esc(iso(a.updated || a.date)) + '">' +
       '<meta property="article:author" content="' + L.esc(a.author) + '">',
   });
 }
@@ -335,34 +342,29 @@ function main() {
   const xmlEsc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   const urls = [];
   for (const p of SITEMAP_PAGES) {
-    urls.push({
-      loc: SITE + '/' + p,
-      lastmod: latest,
-      freq: p === '' ? 'daily' : 'yearly',
-      pr: p === '' ? '1.0' : '0.3',
-    });
+    // सिर्फ़ होम का lastmod सही है (नया लेख आने पर बदलता है); बाकी स्थिर पेज पर गलत lastmod नहीं डालते
+    urls.push({ loc: SITE + '/' + p, lastmod: p === '' ? latest : null });
   }
   for (const a of articles) {
     urls.push({
       loc: SITE + '/articles/' + a.slug + '.html',
       lastmod: String(a.updated || a.date).slice(0, 10),
-      freq: 'monthly',
-      pr: '0.8',
     });
   }
   const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     urls.map((u) =>
-      '  <url>\n    <loc>' + xmlEsc(u.loc) + '</loc>\n    <lastmod>' + u.lastmod + '</lastmod>\n' +
-      '    <changefreq>' + u.freq + '</changefreq>\n    <priority>' + u.pr + '</priority>\n  </url>'
+      '  <url>\n    <loc>' + xmlEsc(u.loc) + '</loc>\n' + (u.lastmod ? '    <lastmod>' + u.lastmod + '</lastmod>\n' : '') + '  </url>'
     ).join('\n') + '\n</urlset>\n';
   fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap);
   fs.writeFileSync(path.join(ROOT, 'robots.txt'), 'User-agent: *\nAllow: /\n\nSitemap: ' + SITE + '/sitemap.xml\n');
 
   // 6. feed.xml (RSS) – Google/रीडर्स को नए लेख जल्दी मिलते हैं
-  const rss = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>\n' +
+  const rss = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>\n' +
     '<title>' + xmlEsc(cfg.SITE_NAME) + '</title>\n<link>' + SITE + '/</link>\n' +
     '<description>' + xmlEsc(cfg.SITE_TAGLINE) + '</description>\n<language>hi-IN</language>\n' +
+    '<atom:link href="' + SITE + '/feed.xml" rel="self" type="application/rss+xml"/>\n' +
+    (articles.length ? '<lastBuildDate>' + new Date(articles[0].updated || articles[0].date).toUTCString() + '</lastBuildDate>\n' : '') +
     articles.slice(0, 30).map((a) =>
       '<item><title>' + xmlEsc(a.title) + '</title><link>' + SITE + '/articles/' + a.slug + '.html</link>' +
       '<guid isPermaLink="true">' + SITE + '/articles/' + a.slug + '.html</guid>' +
