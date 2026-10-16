@@ -202,6 +202,8 @@ function renderPage(o) {
     '<meta property="og:description" content="' + esc(o.description) + '">',
     o.canonical ? '<meta property="og:url" content="' + esc(o.canonical) + '">' : '',
     '<meta property="og:image" content="' + esc(image) + '">',
+    '<meta property="og:image:width" content="1200">',
+    '<meta property="og:image:height" content="630">',
     '<meta property="og:image:alt" content="' + esc(imageAlt) + '">',
     '<meta name="twitter:card" content="summary_large_image">',
     '<meta name="twitter:title" content="' + esc(o.title) + '">',
@@ -212,7 +214,10 @@ function renderPage(o) {
     '<link rel="icon" href="' + esc(root + FAVICON_FILE) + '" type="image/svg+xml">',
     '<link rel="preconnect" href="https://fonts.googleapis.com">',
     '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
-    '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap">',
+    // फ़ॉन्ट CSS पेज को रोकती नहीं (media=print चाल) – तेज़ पहला पेंट; JS बंद हो तो noscript से लोड होती है
+    '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap" media="print" onload="this.media=\'all\'">',
+    '<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap"></noscript>',
+    '<link rel="alternate" type="application/rss+xml" title="' + esc(cfg.SITE_NAME) + '" href="' + SITE + '/feed.xml">',
     '<link rel="stylesheet" href="' + esc(root + 'assets/css/style.css') + '">',
     o.jsonld || '',
     '<script>(function(){var h=document.documentElement;h.classList.add("js");' +

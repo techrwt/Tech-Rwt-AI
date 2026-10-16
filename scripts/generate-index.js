@@ -23,6 +23,7 @@ const STRING_FIELDS = [
   'searchDescription', 'image', 'imageCredit', 'excerpt', 'content',
 ];
 const BOOL_FIELDS = ['featured', 'trending'];
+// वैकल्पिक: "updated": "YYYY-MM-DD" – लेख बदलने पर डालिए (dateModified / sitemap lastmod / ताज़ा संकेत)
 
 const errors = [];
 const fail = (msg) => errors.push(msg);
@@ -100,6 +101,9 @@ function validate(a, file) {
   if (typeof a.slug === 'string' && a.slug.trim() && !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(a.slug)) {
     bad('slug "' + a.slug + '" गलत है – सिर्फ़ छोटे अंग्रेज़ी अक्षर, अंक और "-" (जैसे ai-kya-hai)');
   }
+  if (a.updated !== undefined && (typeof a.updated !== 'string' || !/^\d{4}-\d{2}-\d{2}/.test(a.updated) || isNaN(Date.parse(a.updated)))) {
+    bad('"updated" YYYY-MM-DD रूप में होना चाहिए (या इस फ़ील्ड को हटा दें)');
+  }
   if (typeof a.date === 'string' && a.date.trim()) {
     const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(a.date);
     if (!m || isNaN(Date.parse(a.date))) bad('"date" YYYY-MM-DD रूप में होना चाहिए (जैसे 2026-10-16)');
@@ -164,6 +168,8 @@ function renderArticle(a, all) {
   const { h1, body } = splitH1(a.content);
   const imgAbs = L.abs(L.variants(a.image).og);
   const published = String(a.date).slice(0, 10);
+  const modified = String(a.updated || a.date).slice(0, 10);
+  const isOrg = /टीम|team|desk|staff/i.test(a.author);
   const wordCount = a.content.replace(/<[^>]*>/g, ' ').split(/\s+/).filter(Boolean).length;
 
   const enc = encodeURIComponent;
@@ -189,6 +195,7 @@ function renderArticle(a, all) {
     '<h1 class="article-title">' + (h1 || L.esc(a.title)) + '</h1>' +
     '<p class="article-meta"><span>' + L.esc(a.author) + '</span><span class="dot" aria-hidden="true"></span>' +
     '<time datetime="' + L.esc(published) + '">' + L.esc(L.formatDate(a.date)) + '</time>' +
+    (modified !== published ? '<span class="dot" aria-hidden="true"></span><span>अपडेट: <time datetime="' + L.esc(modified) + '">' + L.esc(L.formatDate(modified)) + '</time></span>' : '') +
     '<span class="dot" aria-hidden="true"></span><span>' + a.readingTime + ' मिनट में पढ़ें</span></p>' +
     '</header>' +
     '<figure class="article-figure fade-in"><img src="' + L.esc(L.rel(root, L.variants(a.image).full)) + '" alt="' + L.esc(a.title) +
@@ -218,8 +225,8 @@ function renderArticle(a, all) {
         description: a.searchDescription,
         image: [imgAbs],
         datePublished: a.date,
-        dateModified: a.date,
-        author: { '@type': 'Person', name: a.author },
+        dateModified: a.updated || a.date,
+        author: { '@type': isOrg ? 'Organization' : 'Person', name: a.author },
         publisher: { '@id': SITE + '/#organization' },
         mainEntityOfPage: { '@type': 'WebPage', '@id': url },
         isPartOf: { '@id': SITE + '/#website' },
@@ -249,6 +256,7 @@ function renderArticle(a, all) {
     jsonld,
     extraHead:
       '<meta property="article:published_time" content="' + L.esc(a.date) + '">' +
+      '<meta property="article:modified_time" content="' + L.esc(a.updated || a.date) + '">' +
       '<meta property="article:author" content="' + L.esc(a.author) + '">',
   });
 }
@@ -316,7 +324,7 @@ function main() {
   for (const a of articles) {
     urls.push({
       loc: SITE + '/articles/' + a.slug + '.html',
-      lastmod: String(a.date).slice(0, 10),
+      lastmod: String(a.updated || a.date).slice(0, 10),
       freq: 'monthly',
       pr: '0.8',
     });
@@ -329,6 +337,18 @@ function main() {
     ).join('\n') + '\n</urlset>\n';
   fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemap);
   fs.writeFileSync(path.join(ROOT, 'robots.txt'), 'User-agent: *\nAllow: /\n\nSitemap: ' + SITE + '/sitemap.xml\n');
+
+  // 6. feed.xml (RSS) – Google/रीडर्स को नए लेख जल्दी मिलते हैं
+  const rss = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>\n' +
+    '<title>' + xmlEsc(cfg.SITE_NAME) + '</title>\n<link>' + SITE + '/</link>\n' +
+    '<description>' + xmlEsc(cfg.SITE_TAGLINE) + '</description>\n<language>hi-IN</language>\n' +
+    articles.slice(0, 30).map((a) =>
+      '<item><title>' + xmlEsc(a.title) + '</title><link>' + SITE + '/articles/' + a.slug + '.html</link>' +
+      '<guid isPermaLink="true">' + SITE + '/articles/' + a.slug + '.html</guid>' +
+      '<pubDate>' + new Date(a.date).toUTCString() + '</pubDate>' +
+      '<description>' + xmlEsc(a.searchDescription) + '</description></item>'
+    ).join('\n') + '\n</channel></rss>\n';
+  fs.writeFileSync(path.join(ROOT, 'feed.xml'), rss);
 
   console.log('✔ पूरा हुआ');
   console.log('  batch फ़ाइलें : ' + items.length);
