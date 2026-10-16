@@ -189,7 +189,6 @@ function renderPage(o) {
   const head = [
     '<meta charset="utf-8">',
     '<meta name="viewport" content="width=device-width, initial-scale=1">',
-    '<meta name="google" content="notranslate">',
     '<title>' + esc(o.title) + '</title>',
     '<meta name="description" content="' + esc(o.description) + '">',
     '<meta name="robots" content="' + esc(robots) + '">',
@@ -229,7 +228,7 @@ function renderPage(o) {
   ].filter(Boolean).join('\n');
 
   void noindex;
-  return '<!DOCTYPE html>\n<html lang="hi" translate="no">\n<head>\n' + head + '\n</head>\n' +
+  return '<!DOCTYPE html>\n<html lang="hi">\n<head>\n' + head + '\n</head>\n' +
     '<body data-root="' + esc(root) + '" data-page="' + esc(o.page || '') + '">\n' +
     '<a class="skip" href="#main">मुख्य सामग्री पर जाएँ</a>\n' +
     (o.welcome ? welcome() + '\n' : '') +
