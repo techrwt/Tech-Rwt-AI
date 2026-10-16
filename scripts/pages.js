@@ -76,7 +76,7 @@ function buildStaticPages(articles) {
     root: '',
     active: 'index.html',
     page: 'home',
-    welcome: true,
+    welcome: false,
     main: homeMain,
     jsonld: graph([L.orgNode(), L.websiteNode()]),
   }));
