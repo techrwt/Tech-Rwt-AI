@@ -19,9 +19,12 @@
     return /^https?:\/\//i.test(p) ? p : root + String(p).replace(/^\/+/, '');
   }
   function cardHtml(a, delay) {
+    var full = a.imageFull || a.image;
+    var small = a.imageCard || full;
+    var srcset = small !== full ? ' srcset="' + esc(imgSrc(small)) + ' 600w, ' + esc(imgSrc(full)) + ' 1200w" sizes="(min-width: 960px) 360px, (min-width: 600px) 50vw, 100vw"' : '';
     return '<article class="card" style="animation-delay:' + (delay || 0) + 'ms">' +
       '<a class="card-link" href="' + esc(root + 'articles/' + a.slug + '.html') + '">' +
-      '<div class="card-media"><img src="' + esc(imgSrc(a.image)) + '" alt="' + esc(a.title) + '" width="1200" height="630" loading="lazy" decoding="async"></div>' +
+      '<div class="card-media"><img src="' + esc(imgSrc(small)) + '"' + srcset + ' alt="' + esc(a.title) + '" width="1200" height="630" loading="lazy" decoding="async"></div>' +
       '<div class="card-body"><p class="card-meta"><time datetime="' + esc(String(a.date).slice(0, 10)) + '">' + esc(fmtDate(a.date)) + '</time>' +
       '<span class="dot" aria-hidden="true"></span><span>' + esc(a.readingTime) + ' मिनट</span></p>' +
       '<h2 class="card-title">' + esc(a.title) + '</h2>' +
@@ -105,17 +108,21 @@
       more.hidden = shown >= all.length;
     };
 
-    getIndex().then(function (list) {
-      all = list;
-      feed.innerHTML = '';
-      if (!all.length) {
-        feed.innerHTML = '<p class="muted">अभी कोई लेख नहीं है। जल्द ही नए लेख आएँगे।</p>';
-        return;
-      }
-      render();
-      more.addEventListener('click', render);
-    }).catch(function () {
-      feed.innerHTML = '<p class="muted">लेख लोड नहीं हो सके। कृपया पेज दोबारा खोलें।</p>';
+    // पहले 9 कार्ड build के समय ही HTML में छपे होते हैं, इसलिए index.json तभी मँगाते हैं जब "और दिखाओ" दबे
+    shown = parseInt(feed.getAttribute('data-prerendered') || '0', 10) || 0;
+    var loaded = false;
+    more.addEventListener('click', function () {
+      if (loaded) { render(); return; }
+      more.disabled = true;
+      getIndex().then(function (list) {
+        all = list;
+        loaded = true;
+        more.disabled = false;
+        render();
+      }).catch(function () {
+        more.disabled = false;
+        feed.insertAdjacentHTML('afterend', '<p class="muted">और लेख लोड नहीं हो सके। कृपया दोबारा कोशिश करें।</p>');
+      });
     });
   }
 
