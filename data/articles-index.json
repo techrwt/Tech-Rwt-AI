@@ -21,8 +21,8 @@
     "batch": 2,
     "readingTime": 5,
     "url": "articles/gemini-4-argon-access-pricing-features.html",
-    "imageFull": "assets/img/gemini-4-argon-google-ai-model.png",
-    "imageCard": "assets/img/gemini-4-argon-google-ai-model.png"
+    "imageFull": "assets/img/gemini-4-argon-google-ai-model.webp",
+    "imageCard": "assets/img/gemini-4-argon-google-ai-model-600.webp"
   },
   {
     "id": "art-0001",
@@ -46,7 +46,7 @@
     "batch": 1,
     "readingTime": 4,
     "url": "articles/generative-ai-kya-hai.html",
-    "imageFull": "assets/img/placeholder.png",
-    "imageCard": "assets/img/placeholder.png"
+    "imageFull": "assets/img/placeholder.webp",
+    "imageCard": "assets/img/placeholder-600.webp"
   }
 ]
