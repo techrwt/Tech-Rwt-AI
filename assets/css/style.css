@@ -381,3 +381,6 @@ html.welcome-on .welcome { display: grid; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
   .welcome-text span, .welcome-sub { opacity: 1; transform: none; }
 }
+.hero.fade-in { animation: none; }
+.card { -webkit-backdrop-filter: none; backdrop-filter: none; }
+.card-category { color: #1e40af; }
