@@ -6,6 +6,20 @@ const cfg = require('./config');
 
 const SITE = String(cfg.SITE_URL).replace(/\/+$/, '');
 
+// Speed: style.css ko HTML ke andar inline karte hain (render-blocking request hat jati hai)
+const INLINE_CSS = (function () {
+  try {
+    return fs.readFileSync(path.join(__dirname, '..', 'assets', 'css', 'style.css'), 'utf8')
+      .replace(/\/\*[\s\S]*?\*\//g, '')
+      .replace(/\s+/g, ' ')
+      .replace(/\s*([{};,])\s*/g, '$1')
+      .replace(/:\s+/g, ':')
+      .trim();
+  } catch (e) {
+    return '';
+  }
+})();
+
 function esc(s) {
   return String(s)
     .replace(/&/g, '&amp;')
@@ -211,13 +225,11 @@ function renderPage(o) {
     '<meta name="twitter:image:alt" content="' + esc(imageAlt) + '">',
     o.extraHead || '',
     '<link rel="icon" href="' + esc(root + FAVICON_FILE) + '" type="image/svg+xml">',
-    '<link rel="preconnect" href="https://fonts.googleapis.com">',
-    '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
-    // फ़ॉन्ट CSS पेज को रोकती नहीं (media=print चाल) – तेज़ पहला पेंट; JS बंद हो तो noscript से लोड होती है
-    '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap" media="print" onload="this.media=\'all\'">',
-    '<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap"></noscript>',
     '<link rel="alternate" type="application/rss+xml" title="' + esc(cfg.SITE_NAME) + '" href="' + SITE + '/feed.xml">',
-    '<link rel="stylesheet" href="' + esc(root + 'assets/css/style.css') + '">',
+    // Speed: CSS inline (render-blocking request nahi); file na mile to purani link chalegi
+    INLINE_CSS
+      ? '<style>' + INLINE_CSS + '</style>'
+      : '<link rel="stylesheet" href="' + esc(root + 'assets/css/style.css') + '">',
     o.jsonld || '',
     '<script>(function(){var h=document.documentElement;h.classList.add("js");' +
       (o.welcome
