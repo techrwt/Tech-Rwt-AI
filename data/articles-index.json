@@ -1,5 +1,31 @@
 [
   {
+    "id": "art-0006",
+    "slug": "n8n-kya-hai-free-automation",
+    "title": "n8n क्या है? बिना कोडिंग के मुफ़्त में पहला ऑटोमेशन बनाने का तरीका",
+    "seoTitle": "n8n क्या है? बिना कोडिंग ऑटोमेशन, फ्री कितना (2026)",
+    "date": "2026-10-18",
+    "author": "TECH RWT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "n8n क्या है और कितना फ्री है? Community Edition की सीमाएँ, क्लाउड के यूरो दाम, अपने कंप्यूटर पर चलाने का तरीका और पहला ऑटोमेशन, आसान चरणों में।",
+    "keyPoints": [
+      "n8n के डॉक्स के अनुसार Community Edition मुफ़्त है, पर कस्टम वेरिएबल, SSO, साझा करना और Git संस्करण नियंत्रण जैसी सुविधाएँ उसमें नहीं हैं।",
+      "n8n के प्राइसिंग पन्ने पर क्लाउड प्लान €20 (Starter, 2,500 रन) और €50 (Pro, 10,000 रन) प्रति माह हैं, सालाना बिलिंग पर।",
+      "हर 15 मिनट पर चलने वाला ऑटोमेशन 30 दिन में 2,880 रन बनाता है, जो Starter की 2,500 की सीमा से ज़्यादा है।",
+      "NPX से सिर्फ़ जाँचिए, टिकाऊ काम के लिए Docker लीजिए: डॉक्स के अनुसार NPM इंस्टॉल n8n 3.0 से बंद हो रहा है।",
+      "समय-आधारित ऑटोमेशन के लिए GENERIC_TIMEZONE में Asia/Kolkata डालिए। ये जानकारी 18 अक्टूबर 2026 तक की है।"
+    ],
+    "image": "assets/img/n8n-kya-hai-free-automation.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "n8n क्या है और बिना कोडिंग के इससे क्या-क्या हो सकता है? जानिए मुफ़्त Community Edition में क्या नहीं मिलता, क्लाउड के यूरो वाले दाम, अपने कंप्यूटर पर चलाने का सही रास्ता और पहला ऑटोमेशन बनाते समय रन-सीमा का हिसाब।",
+    "batch": 6,
+    "readingTime": 9,
+    "url": "articles/n8n-kya-hai-free-automation.html",
+    "imageFull": "assets/img/n8n-kya-hai-free-automation.png",
+    "imageCard": "assets/img/n8n-kya-hai-free-automation.png"
+  },
+  {
     "id": "art-0005",
     "slug": "ai-voice-cloning-scam-kaise-bache",
     "title": "AI वॉइस क्लोनिंग स्कैम से कैसे बचें: परिवार के लिए 4 आसान क़दम",
