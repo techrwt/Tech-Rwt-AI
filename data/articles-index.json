@@ -22,8 +22,8 @@
     "batch": 8,
     "readingTime": 5,
     "url": "articles/myscheme-kaise-kaam-karta-hai.html",
-    "imageFull": "assets/img/myscheme-kaise-kaam-karta-hai.png",
-    "imageCard": "assets/img/myscheme-kaise-kaam-karta-hai.png"
+    "imageFull": "assets/img/myscheme-kaise-kaam-karta-hai.webp",
+    "imageCard": "assets/img/myscheme-kaise-kaam-karta-hai-600.webp"
   },
   {
     "id": "art-0007",
@@ -48,8 +48,8 @@
     "batch": 7,
     "readingTime": 6,
     "url": "articles/hindi-ai-voice-kaise-banate-hain.html",
-    "imageFull": "assets/img/hindi-ai-voice-kaise-banate-hain.png",
-    "imageCard": "assets/img/hindi-ai-voice-kaise-banate-hain.png"
+    "imageFull": "assets/img/hindi-ai-voice-kaise-banate-hain.webp",
+    "imageCard": "assets/img/hindi-ai-voice-kaise-banate-hain-600.webp"
   },
   {
     "id": "art-0006",
