@@ -1,5 +1,57 @@
 [
   {
+    "id": "art-0008",
+    "slug": "myscheme-kaise-kaam-karta-hai",
+    "title": "myScheme कैसे काम करता है? AI चैटबॉट से सही योजना खोजें",
+    "seoTitle": "myScheme पोर्टल क्या है? अपनी योजना मिनटों में खोजें | TECH RWT AI",
+    "date": "2026-10-19",
+    "author": "TECH RWT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "myScheme कैसे काम करता है? सरकारी योजना खोजने के 3 क़दम, हिंदी में बोलने और लिखने वाला AI चैटबॉट, पात्रता प्रश्नावली और ठगी से बचने की सलाह एक जगह समझिए।",
+    "keyPoints": [
+      "myScheme पर योजना ढूँढना तीन क़दम में होता है: ब्योरा भरें, सूची देखें, योजना का पेज खोलें",
+      "आधिकारिक FAQ के अनुसार चैटबॉट आवाज़ और टेक्स्ट दोनों में हिंदी और अंग्रेज़ी में बात करता है",
+      "चैटबॉट के बताए नाम को योजना के अपने पेज और पात्रता प्रश्नावली से मिलाइए",
+      "आवेदन सिर्फ़ योजना के पेज से खुलने वाले लिंक से कीजिए, एजेंट को पैसे मत दीजिए",
+      "28 सितंबर 2026 तक 5056 से ज़्यादा योजनाएँ दर्ज थीं, ये जानकारी 19 अक्टूबर 2026 तक की है"
+    ],
+    "image": "assets/img/myscheme-kaise-kaam-karta-hai.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "myScheme कैसे काम करता है, और उसका AI चैटबॉट आपके किस काम आ सकता है? 3 क़दम की प्रक्रिया, चैटबॉट की सुविधाएँ और जवाब जाँचने का तरीका आधिकारिक पेजों के आधार पर यहाँ समझाया गया है।",
+    "batch": 8,
+    "readingTime": 5,
+    "url": "articles/myscheme-kaise-kaam-karta-hai.html",
+    "imageFull": "assets/img/myscheme-kaise-kaam-karta-hai.png",
+    "imageCard": "assets/img/myscheme-kaise-kaam-karta-hai.png"
+  },
+  {
+    "id": "art-0007",
+    "slug": "hindi-ai-voice-kaise-banate-hain",
+    "title": "AI वॉइस कैसे बनाते हैं? हिंदी वॉइसओवर के 5 आसान क़दम",
+    "seoTitle": "AI वॉइस कैसे बनाएं? 5 आसान स्टेप्स (फ्री) | TECH RWT AI",
+    "date": "2026-10-19",
+    "author": "TECH RWT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "AI वॉइस कैसे बनाते हैं? हिंदी स्क्रिप्ट तैयार करने से लेकर Canva, ElevenLabs, Kapwing और FlexClip में आवाज़ चुनने और उच्चारण सुधारने तक के 5 क़दम देखें।",
+    "keyPoints": [
+      "स्क्रिप्ट देवनागरी में, छोटे वाक्यों में लिखिए और अंक शब्दों में बदल दीजिए",
+      "Canva के आधिकारिक पेज के अनुसार एक बार में 1,000 कैरेक्टर तक का टेक्स्ट डाला जा सकता है",
+      "पहले सौ शब्द की क्लिप बनाकर पूरी सुनिए और ग़लत बोले गए शब्द की वर्तनी बदलिए",
+      "किसी और की आवाज़ क्लोन करने से पहले उसकी लिखित अनुमति लीजिए",
+      "ये जानकारी 19 अक्टूबर 2026 तक की है, मुफ़्त सीमा और दाम बदल सकते हैं"
+    ],
+    "image": "assets/img/hindi-ai-voice-kaise-banate-hain.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "AI वॉइस कैसे बनाते हैं? हिंदी स्क्रिप्ट को ऐसे तैयार कीजिए कि आवाज़ ठीक बोले, फिर Canva, ElevenLabs, Kapwing या FlexClip में आवाज़ चुनिए। माइक के बिना वॉइसओवर बनाने के 5 क़दम और उच्चारण सुधारने की 4 ग़लतियाँ यहाँ हैं।",
+    "batch": 7,
+    "readingTime": 6,
+    "url": "articles/hindi-ai-voice-kaise-banate-hain.html",
+    "imageFull": "assets/img/hindi-ai-voice-kaise-banate-hain.png",
+    "imageCard": "assets/img/hindi-ai-voice-kaise-banate-hain.png"
+  },
+  {
     "id": "art-0006",
     "slug": "n8n-kya-hai-free-automation",
     "title": "n8n क्या है? कितना मुफ़्त है और पहला ऑटोमेशन कैसे बनाएँ",
