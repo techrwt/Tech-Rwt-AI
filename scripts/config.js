@@ -16,7 +16,7 @@ module.exports = {
   SITE_URL,
   SITE_NAME: 'TECH RWT AI',
   SITE_TAGLINE: 'हिंदी में AI की सरल, साफ़ और भरोसेमंद जानकारी',
-  CONTACT_EMAIL: 'contact@example.com',
+  CONTACT_EMAIL: 'manbhajan04@gmail.com',
   DEFAULT_IMAGE: 'assets/img/placeholder.png',
   LOGO: 'assets/img/logo.svg',
   WORDS_PER_MINUTE: 180,
