@@ -1,5 +1,31 @@
 [
   {
+    "id": "art-0009",
+    "slug": "ai-hallucination-kya-hai",
+    "title": "AI Hallucination क्या है? गलत जवाब पकड़ने के 5 आसान क़दम",
+    "seoTitle": "AI Hallucination क्या है? गलत जवाब पहचानें | TECH RWT AI",
+    "date": "2026-10-20",
+    "author": "TECH RWT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "AI Hallucination क्या है और चैटबॉट गलत जवाब क्यों देता है? असली अदालती मामले, OpenAI के आँकड़ों और NIST की परिभाषा के साथ गलत जवाब पकड़ने के 5 क़दम समझिए।",
+    "keyPoints": [
+      "AI Hallucination में चैटबॉट पूरे भरोसे से ऐसा जवाब देता है जो सही लगता है पर गलत या गढ़ा हुआ होता है",
+      "22 जून 2023 को अदालत ने ChatGPT के गढ़े फ़ैसलों के हवाले जमा करने पर वकील फ़र्म और दो वकीलों पर $5,000 का जुर्माना लगाया",
+      "OpenAI के 5 सितंबर 2025 के पेज के अनुसार SimpleQA जाँच में o4-mini के 75% जवाब गलत थे, जबकि gpt-5-thinking-mini के 26%",
+      "हवाले, नाम और तारीख चैटबॉट से बाहर किसी आधिकारिक स्रोत पर खुद खोलकर जाँचिए, क्योंकि उसके तर्क और हवाले भी गढ़े हो सकते हैं",
+      "ये जानकारी 20 अक्टूबर 2026 तक की है; मॉडल बदलने पर आँकड़े बदल सकते हैं"
+    ],
+    "image": "assets/img/ai-hallucination-kya-hai.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "AI Hallucination क्या है और चैटबॉट पूरे भरोसे से गलत जवाब क्यों दे देता है? एक असली अदालती मामले, OpenAI के आँकड़ों और NIST की परिभाषा के साथ समझिए कि गलत जवाब कैसे पकड़ें।",
+    "batch": 9,
+    "readingTime": 9,
+    "url": "articles/ai-hallucination-kya-hai.html",
+    "imageFull": "assets/img/ai-hallucination-kya-hai.png",
+    "imageCard": "assets/img/ai-hallucination-kya-hai.png"
+  },
+  {
     "id": "art-0008",
     "slug": "myscheme-kaise-kaam-karta-hai",
     "title": "myScheme कैसे काम करता है? AI चैटबॉट से सही योजना खोजें",
