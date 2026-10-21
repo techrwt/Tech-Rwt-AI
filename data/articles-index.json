@@ -1,5 +1,57 @@
 [
   {
+    "id": "art-0011",
+    "slug": "perplexity-ke-vikalp-ai-search",
+    "title": "Perplexity के विकल्प: हवाले वाले AI सर्च कैसे चुनें",
+    "seoTitle": "Perplexity के विकल्प: AI सर्च कैसे चुनें | TECH RWT AI",
+    "date": "2026-10-21",
+    "author": "TECH RWT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "Perplexity के विकल्प कौन से हैं और कैसे चुनें? Gemini, Copilot और Ask Brave में हवाले कैसे दिखते हैं, 3 जाँच और 10 मिनट का परखने का तरीका। आज़माकर देखिए।",
+    "keyPoints": [
+      "टूल का नाम नहीं, 3 जाँच तय करें: हवाले दिखते हैं, लिंक खुलता है, और उस पन्ने में वही बात लिखी है",
+      "Google के सहायता पेज के अनुसार Gemini में Sources बटन न दिखे तो उस जवाब के लिए लिंक नहीं दिए गए",
+      "Microsoft के 7 नवंबर 2025 के ब्लॉग के अनुसार Copilot में हवाले जवाब के बीच, नीचे और दाईं ओर की सूची में दिखते हैं",
+      "Brave के 29 सितंबर 2025 के ब्लॉग के अनुसार Ask Brave मुफ़्त है, पर उसमें हवालों का साफ़ ज़िक्र नहीं मिला",
+      "अपने पक्के जवाब वाले सवाल को दो टूल में चलाकर परखिए; ये जानकारी 21 अक्टूबर 2026 तक की है"
+    ],
+    "image": "assets/img/perplexity-ke-vikalp-ai-search.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "Perplexity के विकल्प चुनते समय असली सवाल ये है कि कौन सा टूल अपने हवाले सच में निभाता है। Gemini, Copilot और Ask Brave के आधिकारिक पन्नों के आधार पर 3 जाँच और 10 मिनट का परखने का तरीका यहाँ है।",
+    "batch": 11,
+    "readingTime": 5,
+    "url": "articles/perplexity-ke-vikalp-ai-search.html",
+    "imageFull": "assets/img/perplexity-ke-vikalp-ai-search.png",
+    "imageCard": "assets/img/perplexity-ke-vikalp-ai-search.png"
+  },
+  {
+    "id": "art-0010",
+    "slug": "chatgpt-excel-formula-kaise-likhe",
+    "title": "Excel के लिए ChatGPT का उपयोग कैसे करें: जाँच के 4 क़दम",
+    "seoTitle": "Excel के लिए ChatGPT का उपयोग कैसे करें | TECH RWT AI",
+    "date": "2026-10-21",
+    "author": "TECH RWT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "Excel के लिए ChatGPT का उपयोग कैसे करें? प्रॉम्प्ट का नमूना, डेटा की सुरक्षा, फ़ॉर्मूला जाँचने के 4 क़दम और #REF! जैसी त्रुटि का हल। नमूना शीट पर आज़माइए।",
+    "keyPoints": [
+      "फ़ॉर्मूला माँगते समय कॉलम के नाम, 2 से 3 नमूना पंक्तियाँ और नतीजा लिखिए; पूरी शीट चिपकाने की ज़रूरत नहीं",
+      "AI का दिया फ़ॉर्मूला पहले ऐसी छोटी शीट पर जाँचिए जिसका नतीजा आप हाथ से निकाल सकें",
+      "शर्त \"से अधिक\" की हो तो ठीक उसी संख्या वाली पंक्ति रखिए, इससे >= और > की गड़बड़ी पकड़ में आती है",
+      "#REF! आए तो फ़ॉर्मूला और त्रुटि का नाम दोनों चैट में चिपकाकर सुधार माँगिए",
+      "Microsoft के पेज के अनुसार Copilot के नतीजे भी ग़लत हो सकते हैं; ये जानकारी 21 अक्टूबर 2026 तक की है"
+    ],
+    "image": "assets/img/chatgpt-excel-formula-kaise-likhe.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "Excel के लिए ChatGPT का उपयोग कैसे करें, ताकि फ़ॉर्मूला सिर्फ़ चले नहीं, सही भी निकले? प्रॉम्प्ट का तैयार नमूना, डेटा सुरक्षित रखने का तरीका और जाँचने के 4 क़दम यहाँ समझाए गए हैं।",
+    "batch": 10,
+    "readingTime": 7,
+    "url": "articles/chatgpt-excel-formula-kaise-likhe.html",
+    "imageFull": "assets/img/chatgpt-excel-formula-kaise-likhe.png",
+    "imageCard": "assets/img/chatgpt-excel-formula-kaise-likhe.png"
+  },
+  {
     "id": "art-0009",
     "slug": "ai-hallucination-kya-hai",
     "title": "AI Hallucination क्या है? गलत जवाब पकड़ने के 5 आसान क़दम",
