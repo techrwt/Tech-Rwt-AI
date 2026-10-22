@@ -70,8 +70,8 @@ function buildStaticPages(articles) {
     '</section>';
 
   write('index.html', L.renderPage({
-    title: cfg.SITE_NAME + ' – हिंदी में AI की ताज़ा और आसान जानकारी',
-    description: 'TECH RWT AI पर पढ़िए आर्टिफिशियल इंटेलिजेंस, चैटबॉट और नई तकनीक से जुड़े सरल हिंदी लेख, एक ही जगह।',
+    title: cfg.SITE_NAME + ' – हिंदी में AI न्यूज़, टूल्स और आसान गाइड',
+    description: cfg.SITE_NAME + ' (' + cfg.ALTERNATE_NAME + ') पर पढ़िए AI न्यूज़, चैटबॉट और AI टूल्स के बारे में सरल हिंदी लेख। हर नई तकनीक आसान भाषा में।',
     canonical: SITE + '/',
     root: '',
     active: 'index.html',
