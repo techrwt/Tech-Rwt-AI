@@ -11,12 +11,18 @@ const path = require("path");
 const HOST = "techrawatai.sbs";
 const listFile = path.join(os.tmpdir(), "indexnow-urls-ai.json");
 
-// IndexNow key: site ke root me <key>.txt file honi chahiye, jiske andar wahi key likhi ho.
+// IndexNow key: pehle root ki key.txt dekhta hai (andar sirf key likhi ho), nahi to <key>.txt naam wali file.
 function findKey() {
+  if (fs.existsSync("key.txt")) {
+    const k = fs.readFileSync("key.txt", "utf8").trim();
+    if (/^[a-zA-Z0-9-]{8,128}$/.test(k)) return { key: k, loc: `https://${HOST}/key.txt` };
+    console.log("key.txt ke andar sirf key honi chahiye (8-128 akshar/ank, koi space ya line nahi).");
+    return null;
+  }
   for (const f of fs.readdirSync(".")) {
     if (!f.endsWith(".txt")) continue;
     const k = f.slice(0, -4);
-    if (/^[a-zA-Z0-9-]{8,128}$/.test(k) && fs.readFileSync(f, "utf8").trim() === k) return k;
+    if (/^[a-zA-Z0-9-]{8,128}$/.test(k) && fs.readFileSync(f, "utf8").trim() === k) return { key: k, loc: `https://${HOST}/${f}` };
   }
   return null;
 }
@@ -26,9 +32,9 @@ if (process.argv.includes("--all")) {
   if (!fs.existsSync("sitemap.xml")) { console.log("sitemap.xml nahi mili (site ke root me chalao)."); process.exit(1); }
   const xml = fs.readFileSync("sitemap.xml", "utf8");
   const urls = [...xml.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/g)].map((m) => m[1]).filter((u) => u.includes(HOST));
-  const key = findKey();
-  if (!key) { console.log("Key file nahi mili: root me <key>.txt banao (andar wahi key)."); process.exit(1); }
-  payload = { host: HOST, key, keyLocation: `https://${HOST}/${key}.txt`, urlList: urls };
+  const k = findKey();
+  if (!k) { console.log("Key file nahi mili: root me key.txt banao (andar sirf key)."); process.exit(1); }
+  payload = { host: HOST, key: k.key, keyLocation: k.loc, urlList: urls };
 } else {
   if (!fs.existsSync(listFile)) { console.log("Koi list nahi mili. Sab URLs ke liye: node indexnow.js --all"); process.exit(0); }
   payload = JSON.parse(fs.readFileSync(listFile, "utf8"));
