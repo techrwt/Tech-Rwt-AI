@@ -211,3 +211,17 @@
     });
   }
 })();
+(function(){
+  document.querySelectorAll('a[href$="about.html"]').forEach(function(a){
+    var host = a.parentElement.tagName === 'LI' ? a.parentElement : a;
+    var next = host.nextElementSibling;
+    if (next && /social\.html/.test(next.outerHTML)) return;
+    var n = host.cloneNode(true);
+    var l = n.tagName === 'A' ? n : n.querySelector('a');
+    l.setAttribute('href', a.getAttribute('href').replace('about.html', 'social.html'));
+    l.textContent = 'सोशल';
+    l.classList.remove('active');
+    l.removeAttribute('aria-current');
+    host.parentNode.insertBefore(n, host.nextSibling);
+  });
+})();
