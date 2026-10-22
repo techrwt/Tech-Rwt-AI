@@ -1,5 +1,31 @@
 [
   {
+    "id": "art-0013",
+    "slug": "lm-studio-kya-hai-offline-ai",
+    "title": "LM Studio क्या है? लैपटॉप पर ऑफ़लाइन AI चलाने के 5 क़दम",
+    "seoTitle": "LM Studio क्या है? ऑफ़लाइन AI के 5 क़दम | TECH RWT AI",
+    "date": "2026-10-22",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "LM Studio क्या है और क्या आपका लैपटॉप इसे चला पाएगा? RAM की ज़रूरत, 5 क़दम में Llama या Gemma जैसा मॉडल चलाना और कब इंटरनेट चाहिए। 10 मिनट में आज़माइए।",
+    "keyPoints": [
+      "LM Studio के सिस्टम पन्ने के अनुसार Windows के लिए कम से कम 16GB RAM और 4GB समर्पित VRAM की सलाह है, Mac के लिए Apple Silicon और macOS 14.0",
+      "Discover टैब Windows और Linux पर Ctrl और 2 से, Mac पर ⌘ और 2 से खुलता है; 4-बिट या ऊपर वाला Q संस्करण चुनें",
+      "मॉडल खोजने, डाउनलोड करने और अपडेट के लिए इंटरनेट चाहिए, पर डाउनलोड के बाद चैट और दस्तावेज़ से बात ऑफ़लाइन चलती है",
+      "8 जुलाई 2025 से LM Studio दफ़्तर में भी मुफ़्त है, पर डाउनलोड किए मॉडल का लाइसेंस अलग पढ़ना होगा",
+      "22 अक्टूबर 2026 तक की जानकारी: पहले RAM देखिए, फिर सबसे छोटा 4-बिट मॉडल चलाकर इंटरनेट बंद करके जाँचिए"
+    ],
+    "image": "assets/img/lm-studio-kya-hai-offline-ai.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "LM Studio क्या है और बिना क्लाउड के लैपटॉप पर AI कैसे चलता है? यहाँ RAM की ज़रूरत, 5 क़दम में पहला मॉडल, इंटरनेट कब चाहिए और दफ़्तर में मुफ़्त है या नहीं, सब सीधे दस्तावेज़ों के आधार पर है।",
+    "batch": 13,
+    "readingTime": 6,
+    "url": "articles/lm-studio-kya-hai-offline-ai.html",
+    "imageFull": "assets/img/lm-studio-kya-hai-offline-ai.png",
+    "imageCard": "assets/img/lm-studio-kya-hai-offline-ai.png"
+  },
+  {
     "id": "art-0012",
     "slug": "ai-ko-kya-nahi-batana-chahiye",
     "title": "AI को कभी न बताए ये चीजें: 6 बातें और बंद करने वाली सेटिंग",
