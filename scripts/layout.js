@@ -78,6 +78,7 @@ const NAV = [
   ['index.html', 'होम'],
   ['search.html', 'खोजें'],
   ['about.html', 'हमारे बारे में'],
+  ['social.html', 'सोशल'],
   ['contact.html', 'संपर्क'],
 ];
 const FOOT = NAV.concat([
@@ -113,8 +114,10 @@ function orgNode() {
     '@type': 'Organization',
     '@id': SITE + '/#organization',
     name: cfg.SITE_NAME,
+    alternateName: cfg.ALTERNATE_NAME,
     url: SITE + '/',
     logo: { '@type': 'ImageObject', url: abs(LOGO_FILE) },
+    sameAs: (cfg.SOCIAL || []).map((x) => x.url),
   };
 }
 
@@ -123,6 +126,7 @@ function websiteNode() {
     '@type': 'WebSite',
     '@id': SITE + '/#website',
     name: cfg.SITE_NAME,
+    alternateName: cfg.ALTERNATE_NAME,
     url: SITE + '/',
     inLanguage: 'hi-IN',
     publisher: { '@id': SITE + '/#organization' },

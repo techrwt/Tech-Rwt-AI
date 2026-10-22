@@ -115,13 +115,54 @@ function buildStaticPages(articles) {
     description: cfg.SITE_NAME + ' क्या है, हम क्या लिखते हैं और क्यों: हिंदी पाठकों के लिए AI की सरल जानकारी।',
     h1: 'हमारे बारे में',
     body:
-      '<p>' + L.esc(cfg.SITE_NAME) + ' एक हिंदी वेबसाइट है, जहाँ आर्टिफिशियल इंटेलिजेंस (AI) और उससे जुड़ी नई तकनीक के बारे में सरल भाषा में लेख मिलते हैं।</p>' +
+      '<p>' + L.esc(cfg.SITE_NAME) + ' (<strong>' + L.esc(cfg.ALTERNATE_NAME) + '</strong> नाम से भी जानी जाती है) एक हिंदी वेबसाइट है, जहाँ आर्टिफिशियल इंटेलिजेंस (AI) और उससे जुड़ी नई तकनीक के बारे में सरल भाषा में लेख मिलते हैं।</p>' +
       '<h2>हमारा मकसद</h2>' +
       '<p>इंटरनेट पर AI की ज़्यादातर अच्छी जानकारी अंग्रेज़ी में है। हमारा मकसद उसे साफ़, सही और आसान हिंदी में हर पाठक तक पहुँचाना है, ताकि तकनीक की समझ किसी भाषा की मोहताज न रहे।</p>' +
       '<h2>हम क्या लिखते हैं</h2>' +
       '<ul><li>AI की बुनियादी बातें और नई खोजें</li><li>चैटबॉट और AI टूल्स का सही इस्तेमाल</li><li>तकनीक से जुड़े बदलाव और उनका असर</li></ul>' +
       '<h2>हमारा तरीका</h2>' +
       '<p>हर लेख को पढ़ने में आसान रखा जाता है: छोटे वाक्य, साफ़ उपशीर्षक और मुख्य बातों का सार। अगर किसी लेख में कोई कमी दिखे, तो हमें <a href="contact.html">संपर्क</a> पेज से बताइए।</p>',
+  }));
+
+  // ---------- सोशल ----------
+  const socNames = cfg.SOCIAL.map((x) => x.name);
+  const socList = socNames.slice(0, -1).join(', ') + ' और ' + socNames[socNames.length - 1];
+  const socTitle = 'सोशल मीडिया – ' + cfg.SITE_NAME;
+  const socDesc = cfg.SITE_NAME + ' के आधिकारिक सोशल मीडिया पेज: ' + socList + '।';
+  const socCards = cfg.SOCIAL.map((x) =>
+    '<a class="soc-card" href="' + L.esc(x.url) + '" target="_blank" rel="noopener noreferrer me">' +
+    '<span class="soc-ico">' + x.icon + '</span><span class="soc-txt"><strong>' + L.esc(x.name) +
+    '</strong><small>' + L.esc(x.handle) + '</small></span></a>'
+  ).join('');
+  const socialMain =
+    '<div class="container page"><div class="article-wrap fade-in">' +
+    '<h1 class="page-title">हमसे जुड़िए</h1><div class="prose">' +
+    '<p>' + L.esc(cfg.SITE_NAME) + ' के नए लेख और अपडेट इन आधिकारिक पेजों पर भी मिलते हैं। अपनी पसंद के प्लेटफॉर्म पर हमें फॉलो कीजिए।</p>' +
+    '<div class="soc-grid">' + socCards + '</div>' +
+    '<p>सुझाव या सवाल हो तो <a href="contact.html">संपर्क पेज</a> पर लिखिए।</p>' +
+    '</div></div></div>';
+  const SOC_CSS = '<style>.soc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:24px 0}' +
+    '.soc-card{display:flex;align-items:center;gap:14px;padding:18px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);transition:transform .25s ease,box-shadow .25s ease}' +
+    '.soc-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}.soc-ico{font-size:2rem}' +
+    '.soc-txt strong{display:block;color:var(--ink);font-size:1.08rem}.soc-txt small{color:var(--ink-2)}</style>';
+
+  write('social.html', L.renderPage({
+    title: socTitle,
+    description: socDesc,
+    canonical: SITE + '/social.html',
+    root: '',
+    active: 'social.html',
+    page: 'social',
+    main: socialMain,
+    extraHead: SOC_CSS,
+    jsonld: graph([L.orgNode(), L.websiteNode(), {
+      '@type': 'WebPage',
+      '@id': SITE + '/social.html#webpage',
+      url: SITE + '/social.html',
+      name: socTitle,
+      inLanguage: 'hi-IN',
+      isPartOf: { '@id': SITE + '/#website' },
+    }]),
   }));
 
   // ---------- संपर्क ----------
@@ -229,6 +270,6 @@ function buildStaticPages(articles) {
 }
 
 /** sitemap में जाने वाले ज़रूरी स्थिर पेज (search और 404 नहीं) */
-const SITEMAP_PAGES = ['', 'about.html', 'contact.html', 'privacy-policy.html', 'terms.html'];
+const SITEMAP_PAGES = ['', 'about.html', 'social.html', 'contact.html', 'privacy-policy.html', 'terms.html'];
 
 module.exports = { buildStaticPages, SITEMAP_PAGES };
