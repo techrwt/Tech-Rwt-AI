@@ -1,5 +1,31 @@
 [
   {
+    "id": "art-0012",
+    "slug": "ai-ko-kya-nahi-batana-chahiye",
+    "title": "AI को कभी न बताए ये चीजें: 6 बातें और बंद करने वाली सेटिंग",
+    "seoTitle": "AI को कभी न बताए ये चीजें: 6 बातें | TECH RWT AI",
+    "date": "2026-10-22",
+    "author": "TECH RWT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "AI को कभी न बताए ये चीजें कौन सी हैं? पासवर्ड, आधार, खाता नंबर समेत 6 बातें और ChatGPT, Gemini, Claude में ट्रेनिंग रोकने की सेटिंग। 10 मिनट में जाँचिए।",
+    "keyPoints": [
+      "पासवर्ड, बैंक और कार्ड की जानकारी, आधार या पैन नंबर, घर का पता, निजी स्वास्थ्य रिपोर्ट, मुकदमे के कागज़ और दफ़्तर का गोपनीय डेटा चैट में न डालें",
+      "OpenAI के सहायता पन्ने के अनुसार ChatGPT में डेटा कंट्रोल्स से ट्रेनिंग वाला स्विच बंद करने पर वो पूरे अकाउंट पर लागू होता है",
+      "Google के 19 मई 2026 तक अपडेट हुए पन्ने के अनुसार कीप एक्टिविटी बंद होने पर भी समीक्षक देखी चैट मिटाने पर नहीं हटती",
+      "Anthropic के प्राइवेसी सेंटर के अनुसार Claude में स्विच बंद करने पर भी शुरू हो चुकी ट्रेनिंग में डेटा बना रहता है",
+      "22 अक्टूबर 2026 तक की जानकारी: 10 मिनट में सेटिंग जाँचिए और पिछली 5 चैट में संवेदनशील नंबर खोजिए"
+    ],
+    "image": "assets/img/ai-ko-kya-nahi-batana-chahiye.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "AI को कभी न बताए ये चीजें कौन सी हैं और जानकारी डालनी ही पड़े तो क्या करें? यहाँ 6 बातें, नाम-नंबर हटाने का आसान तरीका और ChatGPT, Gemini, Claude की सेटिंग का सीधा रास्ता है।",
+    "batch": 12,
+    "readingTime": 7,
+    "url": "articles/ai-ko-kya-nahi-batana-chahiye.html",
+    "imageFull": "assets/img/ai-ko-kya-nahi-batana-chahiye.png",
+    "imageCard": "assets/img/ai-ko-kya-nahi-batana-chahiye.png"
+  },
+  {
     "id": "art-0011",
     "slug": "perplexity-ke-vikalp-ai-search",
     "title": "Perplexity के विकल्प: हवाले वाले AI सर्च कैसे चुनें",

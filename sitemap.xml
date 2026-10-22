@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://techrawatai.sbs/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
     <loc>https://techrawatai.sbs/about.html</loc>
@@ -15,6 +15,10 @@
   </url>
   <url>
     <loc>https://techrawatai.sbs/terms.html</loc>
+  </url>
+  <url>
+    <loc>https://techrawatai.sbs/articles/ai-ko-kya-nahi-batana-chahiye.html</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
   <url>
     <loc>https://techrawatai.sbs/articles/perplexity-ke-vikalp-ai-search.html</loc>
