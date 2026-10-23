@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://techrawatai.sbs/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://techrawatai.sbs/about.html</loc>
@@ -18,6 +18,14 @@
   </url>
   <url>
     <loc>https://techrawatai.sbs/terms.html</loc>
+  </url>
+  <url>
+    <loc>https://techrawatai.sbs/articles/google-sheets-macro-ai-se-banaye.html</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://techrawatai.sbs/articles/bhashini-app-kya-hai-anuvad.html</loc>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://techrawatai.sbs/articles/lm-studio-kya-hai-offline-ai.html</loc>

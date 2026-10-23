@@ -1,5 +1,57 @@
 [
   {
+    "id": "art-0015",
+    "slug": "google-sheets-macro-ai-se-banaye",
+    "title": "Google Sheets मैक्रो AI से कैसे बनाएँ: कॉपी पर जाँचने के 5 क़दम",
+    "seoTitle": "Google Sheets मैक्रो AI से कैसे बनाएँ | TECH RWT AI",
+    "date": "2026-10-23",
+    "author": "TECH RWT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "Google Sheets मैक्रो AI से कैसे बनाएँ? प्रॉम्प्ट का नमूना, कोड में ख़तरे वाले नाम, मैक्रो इंपोर्ट के क़दम और कॉपी पर जाँचने का तरीका। तीन पंक्तियों पर आज़माइए।",
+    "keyPoints": [
+      "मैक्रो वाला फ़ंक्शन कोई इनपुट मान नहीं लेता और कुछ लौटाता नहीं; यही शर्त AI को प्रॉम्प्ट में पहले बता दीजिए",
+      "सारा परीक्षण शीट की कॉपी पर कीजिए और पहले सिर्फ़ तीन नमूना पंक्तियाँ रखिए, जिनके नतीजे आपको पहले से पता हों",
+      "कोड में GmailApp, MailApp, UrlFetchApp, DriveApp, deleteRows या clearContent दिखे और आपने माँगा न हो, तो उसे हटवाइए",
+      "Google के कोटा पन्ने के अनुसार स्क्रिप्ट एक बार में 6 मिनट चलती है; gmail.com खाते में ट्रिगर का रोज़ का कुल समय 90 मिनट है",
+      "ये जानकारी 23 अक्टूबर 2026 तक की है; ऐप्स स्क्रिप्ट की सीमाएँ बिना सूचना बदल सकती हैं"
+    ],
+    "image": "assets/img/google-sheets-macro-ai-se-banaye.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "Google Sheets मैक्रो AI से कैसे बनाएँ ताकि शीट का डेटा न बिगड़े? प्रॉम्प्ट का तैयार नमूना, AI के लिखे कोड में ख़तरे वाली चीज़ें पकड़ने का तरीका और कॉपी पर जाँचने के 5 क़दम यहाँ हैं।",
+    "batch": 15,
+    "readingTime": 6,
+    "url": "articles/google-sheets-macro-ai-se-banaye.html",
+    "imageFull": "assets/img/google-sheets-macro-ai-se-banaye.png",
+    "imageCard": "assets/img/google-sheets-macro-ai-se-banaye.png"
+  },
+  {
+    "id": "art-0014",
+    "slug": "bhashini-app-kya-hai-anuvad",
+    "title": "भाषिणी ऐप क्या है? अनुवाद करने और जाँचने के 4 क़दम",
+    "seoTitle": "भाषिणी ऐप क्या है? अनुवाद के 4 क़दम | TECH RWT AI",
+    "date": "2026-10-23",
+    "author": "TECH RWT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "भाषिणी ऐप क्या है और उसका अनुवाद कितना भरोसेमंद है? ऐप की सुविधाएँ, निजता की बातें और उलटा अनुवाद करके नतीजा जाँचने के 4 क़दम। 15 मिनट में परखिए।",
+    "keyPoints": [
+      "Google Play के पन्ने के अनुसार भाषिणी ऐप बीटा है और चार काम करता है: आवाज़ से टेक्स्ट, भाषा से भाषा अनुवाद, टेक्स्ट से आवाज़ और बातचीत",
+      "PIB के 9 फ़रवरी 2026 के दस्तावेज़ के अनुसार मंच पर आवाज़ की सेवाएँ 22 भाषाओं में और टेक्स्ट की सेवाएँ 36 भाषाओं में हैं",
+      "अनुवाद को वापस मूल भाषा में अनुवादित करके जाँचिए, और नाम, रकम व तारीख़ मिलाइए",
+      "Google Play पर पैकेज आईडी com.dibd.bhashini है; इंस्टॉल से पहले डेवलपर और आईडी मिलाइए",
+      "ये जानकारी 23 अक्टूबर 2026 तक की है; भाषाओं की गिनती और बीटा स्थिति बदल सकती है"
+    ],
+    "image": "assets/img/bhashini-app-kya-hai-anuvad.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "भाषिणी ऐप क्या है और उससे किया अनुवाद कितना भरोसेमंद है? Google Play, App Store और PIB के पन्नों के आधार पर ऐप की सुविधाएँ, निजता की बातें और उलटा अनुवाद करके जाँचने के 4 क़दम यहाँ हैं।",
+    "batch": 14,
+    "readingTime": 6,
+    "url": "articles/bhashini-app-kya-hai-anuvad.html",
+    "imageFull": "assets/img/bhashini-app-kya-hai-anuvad.png",
+    "imageCard": "assets/img/bhashini-app-kya-hai-anuvad.png"
+  },
+  {
     "id": "art-0013",
     "slug": "lm-studio-kya-hai-offline-ai",
     "title": "LM Studio क्या है? लैपटॉप पर ऑफ़लाइन AI चलाने के 5 क़दम",
