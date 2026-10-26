@@ -1,5 +1,31 @@
 [
   {
+    "id": "art-0019",
+    "slug": "ollama-ya-lm-studio-kaun-sa",
+    "title": "Ollama बनाम LM Studio: लैपटॉप पर AI चलाने के लिए कौन सा चुनें",
+    "seoTitle": "Ollama बनाम LM Studio: कौन सा चुनें | TECH RWT AI",
+    "date": "2026-10-26",
+    "author": "TECH RWT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "Ollama बनाम LM Studio: कौन सा चुनें? Ollama टर्मिनल और API वालों के लिए, LM Studio क्लिक और दस्तावेज़ चैट के लिए। फ़र्क की तालिका और 10 मिनट की जाँच।",
+    "keyPoints": [
+      "Google के Gemma दस्तावेज़ का हिंदी पन्ना दोनों को चैट इंटरफ़ेस के साथ स्थानीय रूप से चलाने की श्रेणी में रखता है",
+      "Ollama के क्विकस्टार्ट में मेन्यू, कोडिंग टूल और API हैं, जबकि LM Studio में मॉडल खोज, डाउनलोड और चैट ऐप के भीतर होते हैं",
+      "LM Studio में दस्तावेज़ जोड़कर ऑफ़लाइन बात हो सकती है, और 8 जुलाई 2025 से दफ़्तर में भी इसके लिए अलग लाइसेंस नहीं चाहिए",
+      "LM Studio के सिस्टम पन्ने के अनुसार वो Linux पर चलता है, जो एक पुराने तुलना पन्ने की बात से उल्टा है",
+      "26 अक्टूबर 2026 तक की जानकारी: क्लिक चाहिए तो LM Studio, कोड और API चाहिए तो Ollama, और एक ही सवाल दोनों में आज़माइए"
+    ],
+    "image": "assets/img/ollama-ya-lm-studio-kaun-sa.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "Ollama बनाम LM Studio में कौन सा चुनें? यहाँ दोनों के आधिकारिक पन्नों पर आधारित फ़र्क की तालिका, किसके लिए कौन सा सही है और एक पुराने तुलना पन्ने की Linux वाली ग़लती का सुधार है।",
+    "batch": 19,
+    "readingTime": 5,
+    "url": "articles/ollama-ya-lm-studio-kaun-sa.html",
+    "imageFull": "assets/img/ollama-ya-lm-studio-kaun-sa.png",
+    "imageCard": "assets/img/ollama-ya-lm-studio-kaun-sa.png"
+  },
+  {
     "id": "art-0018",
     "slug": "youtube-ai-video-label-kaise-lagaye",
     "title": "YouTube पर AI वीडियो का लेबल कैसे लगाएँ: कब ज़रूरी, कब नहीं",
