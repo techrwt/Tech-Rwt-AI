@@ -1,5 +1,31 @@
 [
   {
+    "id": "art-0018",
+    "slug": "youtube-ai-video-label-kaise-lagaye",
+    "title": "YouTube पर AI वीडियो का लेबल कैसे लगाएँ: कब ज़रूरी, कब नहीं",
+    "seoTitle": "YouTube पर AI वीडियो का लेबल कैसे लगाएँ | TECH RWT AI",
+    "date": "2026-10-26",
+    "author": "TECH RWT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "YouTube पर AI वीडियो का लेबल कैसे लगाएँ? किन 4 सामग्री पर खुलासा ज़रूरी है, किन पर नहीं, और Studio में AI यूज़ चुनने के क़दम। रीच और कमाई पर असर भी।",
+    "keyPoints": [
+      "YouTube के पन्ने के अनुसार असली जैसी दिखने वाली AI सामग्री का खुलासा ज़रूरी है, जिसमें AI से बना मुख्य संगीत भी आता है",
+      "स्क्रिप्ट, थंबनेल, कैप्शन और अपनी आवाज़ की क्लोनिंग से वॉइसओवर के लिए खुलासा ज़रूरी नहीं है",
+      "YouTube Studio में अपलोड के दौरान एट्रिब्यूट्स के भीतर AI यूज़ पर हाँ या नहीं चुनना होता है",
+      "सिर्फ़ खुलासा करने से दर्शक सीमित नहीं होते और कमाई की पात्रता नहीं घटती",
+      "26 अक्टूबर 2026 तक की जानकारी: पिछले 5 वीडियो जाँचिए और जहाँ दर्शक सच मान सकता है, वहाँ लेबल लगाइए"
+    ],
+    "image": "assets/img/youtube-ai-video-label-kaise-lagaye.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "YouTube पर AI वीडियो का लेबल कैसे लगाएँ और कब ज़रूरी है? यहाँ YouTube के सहायता पन्ने पर आधारित चार शर्तें, छूट वाली चीजें, Studio के क़दम और न लगाने के जोखिम हैं।",
+    "batch": 18,
+    "readingTime": 5,
+    "url": "articles/youtube-ai-video-label-kaise-lagaye.html",
+    "imageFull": "assets/img/youtube-ai-video-label-kaise-lagaye.png",
+    "imageCard": "assets/img/youtube-ai-video-label-kaise-lagaye.png"
+  },
+  {
     "id": "art-0017",
     "slug": "whatsapp-se-meta-ai-kaise-hataye",
     "title": "WhatsApp से Meta AI कैसे हटाएँ? हटता नहीं, पर ये 4 काम होते हैं",
