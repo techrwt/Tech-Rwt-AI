@@ -1,5 +1,30 @@
 [
   {
+    "id": "art-0020",
+    "slug": "ai-se-ppt-kaise-banaye-hindi",
+    "title": "AI से PPT कैसे बनाएं? हिंदी स्लाइड के लिए 5 क़दम",
+    "seoTitle": "AI से PPT कैसे बनाएं? हिंदी के लिए 5 क़दम | TECH RWT AI",
+    "date": "2026-10-27",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "AI से PPT कैसे बनाएं: ख़ाके से स्लाइड तक का तरीका, Gamma, Copilot और Gemini की शर्तें, हिंदी की सीमाएँ और तथ्य जाँचने के क़दम। 30 मिनट की योजना पाएँ।",
+    "keyPoints": [
+      "पहले विषय, दर्शक और 6 से 8 स्लाइड की संख्या बताकर AI से ख़ाका लें, पूरी PPT एक बार में न माँगें",
+      "Google के पेजों के अनुसार 27 अक्टूबर 2026 तक Gemini की स्लाइड सुविधा डेस्कटॉप और अंग्रेज़ी में है, इसलिए हिंदी में पहले एक स्लाइड आज़माएँ",
+      "Gamma के मुफ़्त प्लान में 400 एकमुश्त क्रेडिट हैं और एक्सपोर्ट पर वॉटरमार्क रहता है",
+      "हर आँकड़े का स्रोत ख़ुद खोलकर मिलाएँ और निजी जानकारी वाली फ़ाइल न डालें"
+    ],
+    "image": "assets/img/ai-se-ppt-kaise-banaye-hindi.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "AI से PPT कैसे बनाएं, यह एक लाइन का प्रॉम्प्ट नहीं, ख़ाके से जाँच तक का तरीका है। जानिए कौन सा टूल किस शर्त पर चलता है और हिंदी स्लाइड में कहाँ ध्यान रखना है।",
+    "batch": 20,
+    "readingTime": 7,
+    "url": "articles/ai-se-ppt-kaise-banaye-hindi.html",
+    "imageFull": "assets/img/ai-se-ppt-kaise-banaye-hindi.png",
+    "imageCard": "assets/img/ai-se-ppt-kaise-banaye-hindi.png"
+  },
+  {
     "id": "art-0019",
     "slug": "ollama-ya-lm-studio-kaun-sa",
     "title": "Ollama बनाम LM Studio: लैपटॉप पर AI चलाने के लिए कौन सा चुनें",
