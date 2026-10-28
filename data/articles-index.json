@@ -1,5 +1,30 @@
 [
   {
+    "id": "art-0021",
+    "slug": "deepfake-video-kaise-pehchane",
+    "title": "डीपफेक कैसे पहचानें? सिर्फ़ चेहरा नहीं, ये 5 जाँच करें",
+    "seoTitle": "डीपफेक कैसे पहचानें? ये 5 जाँच करें | TECH RWT AI",
+    "date": "2026-10-28",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "डीपफेक कैसे पहचानें: सिर्फ़ चेहरा देखना काफ़ी नहीं। स्रोत की जाँच, रिवर्स सर्च, Gemini की SynthID जाँच की सीमाएँ और भारत में शिकायत का तरीका जानें।",
+    "keyPoints": [
+      "चेहरा और होंठ देखकर बनी राय सिर्फ़ शक है; Google का पेज भी इन्हें पक्का तरीका नहीं मानता",
+      "Gemini केवल Google के AI की छाप (SynthID) पहचानता है, इसलिए नहीं मिला का मतलब असली नहीं है",
+      "पैसे या डर की माँग हो तो पहले से सेव किए नंबर पर अलग से फ़ोन करें",
+      "शिकायत के लिए राष्ट्रीय साइबर अपराध पोर्टल और 1930 हेल्पलाइन, साथ में स्क्रीनशॉट और लिंक"
+    ],
+    "image": "assets/img/deepfake-video-kaise-pehchane.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "डीपफेक कैसे पहचानें, इसका जवाब सिर्फ़ चेहरा देखना नहीं है। जानिए स्रोत, रिवर्स सर्च और Gemini की जाँच का सही इस्तेमाल और कहाँ शिकायत करें।",
+    "batch": 21,
+    "readingTime": 6,
+    "url": "articles/deepfake-video-kaise-pehchane.html",
+    "imageFull": "assets/img/deepfake-video-kaise-pehchane.png",
+    "imageCard": "assets/img/deepfake-video-kaise-pehchane.png"
+  },
+  {
     "id": "art-0020",
     "slug": "ai-se-ppt-kaise-banaye-hindi",
     "title": "AI से PPT कैसे बनाएं? हिंदी स्लाइड के लिए 5 क़दम",
