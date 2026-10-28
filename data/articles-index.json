@@ -21,8 +21,8 @@
     "batch": 24,
     "readingTime": 5,
     "url": "articles/github-pages-kya-hai-ai-website.html",
-    "imageFull": "assets/img/github-pages-kya-hai-ai-website.png",
-    "imageCard": "assets/img/github-pages-kya-hai-ai-website.png"
+    "imageFull": "assets/img/github-pages-kya-hai-ai-website.webp",
+    "imageCard": "assets/img/github-pages-kya-hai-ai-website-600.webp"
   },
   {
     "id": "art-0022",
@@ -46,8 +46,8 @@
     "batch": 22,
     "readingTime": 5,
     "url": "articles/rag-kya-hai-ai-hindi.html",
-    "imageFull": "assets/img/rag-kya-hai-ai-hindi.png",
-    "imageCard": "assets/img/rag-kya-hai-ai-hindi.png"
+    "imageFull": "assets/img/rag-kya-hai-ai-hindi.webp",
+    "imageCard": "assets/img/rag-kya-hai-ai-hindi-600.webp"
   },
   {
     "id": "art-0021",
@@ -96,8 +96,8 @@
     "batch": 23,
     "readingTime": 5,
     "url": "articles/rti-aavedan-kaise-kare-ai-masauda.html",
-    "imageFull": "assets/img/rti-aavedan-kaise-kare-ai-masauda.png",
-    "imageCard": "assets/img/rti-aavedan-kaise-kare-ai-masauda.png"
+    "imageFull": "assets/img/rti-aavedan-kaise-kare-ai-masauda.webp",
+    "imageCard": "assets/img/rti-aavedan-kaise-kare-ai-masauda-600.webp"
   },
   {
     "id": "art-0020",
