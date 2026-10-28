@@ -1,5 +1,55 @@
 [
   {
+    "id": "art-0024",
+    "slug": "github-pages-kya-hai-ai-website",
+    "title": "GitHub Pages क्या है? AI से बनी वेबसाइट मुफ़्त में कैसे डालें",
+    "seoTitle": "GitHub Pages क्या है? AI की साइट डालें | TECH RWT AI",
+    "date": "2026-10-28",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "GitHub Pages क्या है, यह जानें: AI से बनी एक पेज की वेबसाइट को मुफ़्त में कैसे प्रकाशित करें, 5 क़दम, प्रकाशित करने से पहले की जाँच और GitHub की सीमाएँ।",
+    "keyPoints": [
+      "GitHub Pages स्थिर फ़ाइलों को वेबसाइट बनाता है; PHP, Ruby या Python जैसी सर्वर-साइड भाषाएँ नहीं चलतीं",
+      "मुफ़्त वाले GitHub खाते में Pages सार्वजनिक रिपॉज़िटरी के लिए है, इसलिए निजी जानकारी, पासवर्ड या API कुंजी फ़ाइल में न रखें",
+      "AI से एक ही HTML फ़ाइल बनवाकर index.html नाम से रिपॉज़िटरी में डालें और Pages चालू करें",
+      "सीमाएँ: साइट 1 GB तक, महीने का ट्रैफ़िक 100 GB की नरम सीमा, एक घंटे में 10 बिल्ड की नरम सीमा"
+    ],
+    "image": "assets/img/github-pages-kya-hai-ai-website.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "GitHub Pages क्या है और AI से बनी वेबसाइट को उस पर मुफ़्त में कैसे डालें, यह जानिए। पाँच क़दम, प्रकाशित करने से पहले की जाँच और सीमाएँ।",
+    "batch": 24,
+    "readingTime": 5,
+    "url": "articles/github-pages-kya-hai-ai-website.html",
+    "imageFull": "assets/img/github-pages-kya-hai-ai-website.png",
+    "imageCard": "assets/img/github-pages-kya-hai-ai-website.png"
+  },
+  {
+    "id": "art-0022",
+    "slug": "rag-kya-hai-ai-hindi",
+    "title": "RAG क्या है? अपनी PDF पर AI के जवाब ऐसे जाँचें",
+    "seoTitle": "RAG क्या है? अपनी PDF पर AI के जवाब जाँचें | TECH RWT AI",
+    "date": "2026-10-28",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "RAG क्या है, यह खुली किताब की परीक्षा जैसे उदाहरण से समझें: AI कैसे स्रोत खोजकर जवाब लिखता है, कहाँ चूकता है और अपनी PDF पर 30 मिनट में कैसे जाँचें।",
+    "keyPoints": [
+      "RAG में AI जवाब लिखने से पहले आपके दस्तावेज़ों या बाहरी स्रोत से काम के अंश खोजता है",
+      "बदली हुई जानकारी जोड़ने के लिए मॉडल नहीं बदलना पड़ता, स्रोत फ़ाइल बदलना काफ़ी है",
+      "RAG मनगढ़ंत जवाब का जोखिम घटाता है, पर ख़त्म नहीं करता",
+      "30 मिनट की जाँच: सवाल बिना फ़ाइल और फ़ाइल के साथ पूछें, स्रोत का अंश मिलाएँ, और ऐसा सवाल पूछें जिसका जवाब फ़ाइल में न हो"
+    ],
+    "image": "assets/img/rag-kya-hai-ai-hindi.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "RAG क्या है, इसे खुली किताब की परीक्षा से समझिए। जानिए AI कैसे आपके दस्तावेज़ों से अंश खोजकर जवाब लिखता है, कहाँ ग़लत हो सकता है और अपनी PDF पर कैसे जाँचें।",
+    "batch": 22,
+    "readingTime": 5,
+    "url": "articles/rag-kya-hai-ai-hindi.html",
+    "imageFull": "assets/img/rag-kya-hai-ai-hindi.png",
+    "imageCard": "assets/img/rag-kya-hai-ai-hindi.png"
+  },
+  {
     "id": "art-0021",
     "slug": "deepfake-video-kaise-pehchane",
     "title": "डीपफेक कैसे पहचानें? सिर्फ़ चेहरा नहीं, ये 5 जाँच करें",
@@ -23,6 +73,31 @@
     "url": "articles/deepfake-video-kaise-pehchane.html",
     "imageFull": "assets/img/deepfake-video-kaise-pehchane.webp",
     "imageCard": "assets/img/deepfake-video-kaise-pehchane-600.webp"
+  },
+  {
+    "id": "art-0023",
+    "slug": "rti-aavedan-kaise-kare-ai-masauda",
+    "title": "RTI आवेदन कैसे करें? AI से मसौदा बनवाएँ, पर ये 5 जाँच करें",
+    "seoTitle": "RTI आवेदन कैसे करें? AI से मसौदा, 5 जाँच | TECH RWT AI",
+    "date": "2026-10-27",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "RTI आवेदन कैसे करें, यह जानें: केंद्र या राज्य का विभाग चुनना, AI से सवालों का मसौदा बनवाना और भेजने से पहले 5 जाँच। पोर्टल का शुल्क और 3000 अक्षर की सीमा भी।",
+    "keyPoints": [
+      "RTI ऑनलाइन पोर्टल सिर्फ़ केंद्र सरकार के विभागों के लिए है; राज्य के विभाग का आवेदन बिना शुल्क वापसी के लौट जाता है",
+      "AI को सिर्फ़ विषय बताएँ, अपना नाम, पता या पहचान संख्या नहीं",
+      "सवाल दस्तावेज़ की प्रति माँगने वाले रखें, राय या क्यों वाले नहीं",
+      "AI की लिखी धारा या नियम आधिकारिक स्रोत से मिलाएँ; पोर्टल का टेक्स्ट बॉक्स 3000 अक्षर तक है"
+    ],
+    "image": "assets/img/rti-aavedan-kaise-kare-ai-masauda.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "RTI आवेदन कैसे करें और उसमें AI कहाँ काम आता है, यह जानिए। मसौदा बनवाने का तरीका, भेजने से पहले 5 जाँच और पोर्टल की शर्तें एक जगह।",
+    "batch": 23,
+    "readingTime": 5,
+    "url": "articles/rti-aavedan-kaise-kare-ai-masauda.html",
+    "imageFull": "assets/img/rti-aavedan-kaise-kare-ai-masauda.png",
+    "imageCard": "assets/img/rti-aavedan-kaise-kare-ai-masauda.png"
   },
   {
     "id": "art-0020",
