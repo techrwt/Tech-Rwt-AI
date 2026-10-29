@@ -21,8 +21,8 @@
     "batch": 26,
     "readingTime": 5,
     "url": "articles/whisper-se-hindi-audio-text.html",
-    "imageFull": "assets/img/whisper-se-hindi-audio-text.png",
-    "imageCard": "assets/img/whisper-se-hindi-audio-text.png"
+    "imageFull": "assets/img/whisper-se-hindi-audio-text.webp",
+    "imageCard": "assets/img/whisper-se-hindi-audio-text-600.webp"
   },
   {
     "id": "art-0025",
@@ -46,8 +46,8 @@
     "batch": 25,
     "readingTime": 5,
     "url": "articles/ai-se-youtube-thumbnail-kaise-banaye.html",
-    "imageFull": "assets/img/ai-se-youtube-thumbnail-kaise-banaye.png",
-    "imageCard": "assets/img/ai-se-youtube-thumbnail-kaise-banaye.png"
+    "imageFull": "assets/img/ai-se-youtube-thumbnail-kaise-banaye.webp",
+    "imageCard": "assets/img/ai-se-youtube-thumbnail-kaise-banaye-600.webp"
   },
   {
     "id": "art-0024",
