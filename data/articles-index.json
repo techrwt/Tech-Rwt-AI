@@ -1,5 +1,30 @@
 [
   {
+    "id": "art-0025",
+    "slug": "ai-se-youtube-thumbnail-kaise-banaye",
+    "title": "AI से यूट्यूब थंबनेल कैसे बनाएं? साइज़ और नियम की जाँच",
+    "seoTitle": "AI से यूट्यूब थंबनेल कैसे बनाएं? साइज़, नियम | TECH RWT AI",
+    "date": "2026-10-29",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "AI से यूट्यूब थंबनेल कैसे बनाएं: 1280x720 का साइज़, 16:9 अनुपात, खाते की शर्त, भ्रामक थंबनेल पर YouTube की नीति और AI से बनी तस्वीर के 5 क़दम जानें।",
+    "keyPoints": [
+      "YouTube के पन्ने के अनुसार कस्टम थंबनेल के लिए 1280 गुणा 720 (न्यूनतम चौड़ाई 640) और 16:9 की सलाह है",
+      "AI से सिर्फ़ चित्र बनवाएँ, शब्द अपने एडिटर में जोड़ें और हर शब्द ख़ुद पढ़ें",
+      "थंबनेल में वही दिखे जो वीडियो में है; भ्रामक थंबनेल YouTube की नीति के ख़िलाफ़ हैं",
+      "असली व्यक्ति का नक़ली चेहरा थंबनेल में न लगाएँ"
+    ],
+    "image": "assets/img/ai-se-youtube-thumbnail-kaise-banaye.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "AI से यूट्यूब थंबनेल कैसे बनाएं, यह केवल चित्र का सवाल नहीं है। जानिए साइज़, खाते की शर्त, भ्रामक थंबनेल पर नीति और 5 क़दम की प्रक्रिया।",
+    "batch": 25,
+    "readingTime": 5,
+    "url": "articles/ai-se-youtube-thumbnail-kaise-banaye.html",
+    "imageFull": "assets/img/ai-se-youtube-thumbnail-kaise-banaye.png",
+    "imageCard": "assets/img/ai-se-youtube-thumbnail-kaise-banaye.png"
+  },
+  {
     "id": "art-0024",
     "slug": "github-pages-kya-hai-ai-website",
     "title": "GitHub Pages क्या है? AI से बनी वेबसाइट मुफ़्त में कैसे डालें",
