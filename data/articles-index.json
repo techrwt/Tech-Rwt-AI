@@ -1,5 +1,30 @@
 [
   {
+    "id": "art-0026",
+    "slug": "whisper-se-hindi-audio-text",
+    "title": "ऑडियो को टेक्स्ट में मुफ़्त में बदलें: Whisper और हिंदी की सीमा",
+    "seoTitle": "ऑडियो को टेक्स्ट में मुफ़्त में बदलें | TECH RWT AI",
+    "date": "2026-10-29",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "ऑडियो को टेक्स्ट में मुफ़्त में बदलें: Whisper के तीन रास्ते, मॉडल के आकार और VRAM, OpenAI के मॉडल कार्ड की भाषा-सीमा और हिंदी रिकॉर्डिंग पर 5 जाँच।",
+    "keyPoints": [
+      "OpenAI के मॉडल कार्ड के अनुसार Whisper भाषाओं में असमान चलता है, इसलिए हिंदी पर अपनी रिकॉर्डिंग से परखें",
+      "तीन रास्ते: Google Colab, अपना कंप्यूटर और ऑनलाइन टूल; निजी ऑडियो के लिए अपना कंप्यूटर बेहतर",
+      "README के अनुसार पाँच आकार हैं, 1 GB से 10 GB VRAM तक; हिंदी के लिए बहुभाषी संस्करण चुनें",
+      "नाम, संख्या और अंग्रेज़ी शब्द मिलाएँ, और रिकॉर्डिंग में न बोली गई पंक्तियाँ खोजें"
+    ],
+    "image": "assets/img/whisper-se-hindi-audio-text.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "ऑडियो को टेक्स्ट में मुफ़्त में बदलें, पर हिंदी में Whisper कितना सही है? जानिए तीन रास्ते, मॉडल के आकार और अपनी रिकॉर्डिंग पर 5 जाँच।",
+    "batch": 26,
+    "readingTime": 5,
+    "url": "articles/whisper-se-hindi-audio-text.html",
+    "imageFull": "assets/img/whisper-se-hindi-audio-text.png",
+    "imageCard": "assets/img/whisper-se-hindi-audio-text.png"
+  },
+  {
     "id": "art-0025",
     "slug": "ai-se-youtube-thumbnail-kaise-banaye",
     "title": "AI से यूट्यूब थंबनेल कैसे बनाएं? साइज़ और नियम की जाँच",
