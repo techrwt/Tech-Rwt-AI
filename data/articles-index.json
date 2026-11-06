@@ -22,8 +22,8 @@
     "batch": 30,
     "readingTime": 5,
     "url": "articles/farji-app-kaise-pehchane-ai.html",
-    "imageFull": "assets/img/farji-app-kaise-pehchane-ai.png",
-    "imageCard": "assets/img/farji-app-kaise-pehchane-ai.png"
+    "imageFull": "assets/img/farji-app-kaise-pehchane-ai.webp",
+    "imageCard": "assets/img/farji-app-kaise-pehchane-ai-600.webp"
   },
   {
     "id": "art-0029",
@@ -48,8 +48,8 @@
     "batch": 29,
     "readingTime": 6,
     "url": "articles/google-translate-ya-ai-chatbot-hindi.html",
-    "imageFull": "assets/img/google-translate-ya-ai-chatbot-hindi.png",
-    "imageCard": "assets/img/google-translate-ya-ai-chatbot-hindi.png"
+    "imageFull": "assets/img/google-translate-ya-ai-chatbot-hindi.webp",
+    "imageCard": "assets/img/google-translate-ya-ai-chatbot-hindi-600.webp"
   },
   {
     "id": "art-0028",
@@ -74,8 +74,8 @@
     "batch": 28,
     "readingTime": 8,
     "url": "articles/fake-app-kaise-pehchane-ai.html",
-    "imageFull": "assets/img/fake-app-kaise-pehchane-ai.png",
-    "imageCard": "assets/img/fake-app-kaise-pehchane-ai.png"
+    "imageFull": "assets/img/fake-app-kaise-pehchane-ai.webp",
+    "imageCard": "assets/img/fake-app-kaise-pehchane-ai-600.webp"
   },
   {
     "id": "art-0027",
