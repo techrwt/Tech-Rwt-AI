@@ -1,5 +1,57 @@
 [
   {
+    "id": "art-0032",
+    "slug": "python-error-kaise-thik-kare-ai",
+    "title": "Python एरर कैसे ठीक करें: AI को चिपकाने से पहले 5 क़दम",
+    "seoTitle": "Python एरर कैसे ठीक करें: AI के 5 क़दम | TECH RWT AI",
+    "date": "2026-11-07",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "Python एरर कैसे ठीक करें: ट्रेसबैक की आख़िरी पंक्ति पढ़ना, AI को क्या चिपकाएँ और क्या हटाएँ, और उसका सुधार कॉपी पर परखने का तरीका। 15 मिनट में आज़माइए।",
+    "keyPoints": [
+      "Python के ट्यूटोरियल के अनुसार एरर की आख़िरी पंक्ति में प्रकार और ब्योरा होता है, और संदेश में फ़ाइल का नाम व पंक्ति संख्या भी छपती है",
+      "AI को सिर्फ़ आख़िरी पंक्ति नहीं, पूरा ट्रेसबैक, एरर दोहराने वाला छोटा कोड और Python का संस्करण दीजिए",
+      "चिपकाने से पहले पासवर्ड, API कुंजी, डेटाबेस का पता और निजी नाम-नंबर हटाइए",
+      "AI का सुधार कॉपी पर, एक बार में एक बदलाव करके चलाइए; मिटाने वाली अनमाँगी पंक्ति हटवाइए",
+      "ये जानकारी 7 नवंबर 2026 तक की है"
+    ],
+    "image": "assets/img/python-error-kaise-thik-kare-ai.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "Python एरर कैसे ठीक करें, जब AI से मदद लेनी हो? ट्रेसबैक पढ़ने का आधिकारिक तरीका, AI को देने लायक जानकारी, हटाने लायक निजी चीज़ें और सुधार को कॉपी पर परखने के क़दम यहाँ हैं।",
+    "batch": 32,
+    "readingTime": 5,
+    "url": "articles/python-error-kaise-thik-kare-ai.html",
+    "imageFull": "assets/img/python-error-kaise-thik-kare-ai.png",
+    "imageCard": "assets/img/python-error-kaise-thik-kare-ai.png"
+  },
+  {
+    "id": "art-0031",
+    "slug": "photo-se-text-nikale-hindi",
+    "title": "फोटो से टेक्स्ट निकालें: हिंदी में सही नतीजे के 5 क़दम",
+    "seoTitle": "फोटो से टेक्स्ट निकालें: हिंदी के 5 क़दम | TECH RWT AI",
+    "date": "2026-11-07",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "फोटो से टेक्स्ट निकालें: Lens, AI चैटबॉट और Tesseract के रास्ते, साफ़ फोटो के नियम और हिंदी में नाम-संख्या मिलाने की जाँच। 15 मिनट में अपनी फोटो पर परखिए।",
+    "keyPoints": [
+      "Google खोज के सहायता पन्ने के अनुसार Lens में टेक्स्ट चुनने के बाद Copy, Listen, Translate और खोज के विकल्प मिलते हैं",
+      "Tesseract के दस्तावेज़ के अनुसार कम से कम 300 DPI, हल्की पृष्ठभूमि पर गहरे अक्षर और सीधा पन्ना बेहतर नतीजे देते हैं",
+      "हिंदी में संख्या, तारीख़, नाम और मात्राएँ मूल से मिलाइए; सटीकता का कोई आधिकारिक आँकड़ा हमें नहीं मिला",
+      "चैटबॉट को निर्देश दीजिए: जस का तस लिखो, कुछ मत जोड़ो, अस्पष्ट हिस्से पर [अस्पष्ट] लिखो",
+      "आधार, बैंक या दवा की पर्ची की फोटो ऑनलाइन टूल में न डालें; ये जानकारी 7 नवंबर 2026 तक की है"
+    ],
+    "image": "assets/img/photo-se-text-nikale-hindi.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "फोटो से टेक्स्ट निकालें तो हिंदी में कहाँ चूक होती है और उसे कैसे पकड़ें? Lens, AI चैटबॉट और Tesseract के रास्ते, साफ़ फोटो खींचने के नियम और अपनी फोटो पर 15 मिनट की जाँच यहाँ है।",
+    "batch": 31,
+    "readingTime": 6,
+    "url": "articles/photo-se-text-nikale-hindi.html",
+    "imageFull": "assets/img/photo-se-text-nikale-hindi.png",
+    "imageCard": "assets/img/photo-se-text-nikale-hindi.png"
+  },
+  {
     "id": "art-0030",
     "slug": "farji-app-kaise-pehchane-ai",
     "title": "फर्जी ऐप कैसे पहचानें: AI ऐप डाउनलोड से पहले 5 जाँच",
