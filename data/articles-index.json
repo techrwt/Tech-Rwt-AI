@@ -22,8 +22,8 @@
     "batch": 32,
     "readingTime": 5,
     "url": "articles/python-error-kaise-thik-kare-ai.html",
-    "imageFull": "assets/img/python-error-kaise-thik-kare-ai.png",
-    "imageCard": "assets/img/python-error-kaise-thik-kare-ai.png"
+    "imageFull": "assets/img/python-error-kaise-thik-kare-ai.webp",
+    "imageCard": "assets/img/python-error-kaise-thik-kare-ai-600.webp"
   },
   {
     "id": "art-0031",
@@ -48,8 +48,8 @@
     "batch": 31,
     "readingTime": 6,
     "url": "articles/photo-se-text-nikale-hindi.html",
-    "imageFull": "assets/img/photo-se-text-nikale-hindi.png",
-    "imageCard": "assets/img/photo-se-text-nikale-hindi.png"
+    "imageFull": "assets/img/photo-se-text-nikale-hindi.webp",
+    "imageCard": "assets/img/photo-se-text-nikale-hindi-600.webp"
   },
   {
     "id": "art-0030",
