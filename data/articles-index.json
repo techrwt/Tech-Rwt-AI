@@ -1,5 +1,31 @@
 [
   {
+    "id": "art-0033",
+    "slug": "cpgrams-shikayat-kaise-darj-kare-ai",
+    "title": "CPGRAMS पर शिकायत कैसे दर्ज करें: AI से मसौदा और 21 दिन की सीमा",
+    "seoTitle": "CPGRAMS पर शिकायत कैसे दर्ज करें: AI मसौदा | TECH RWT AI",
+    "date": "2026-11-10",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "CPGRAMS पर शिकायत कैसे दर्ज करें: पंजीकरण से ट्रैकिंग तक के क़दम, AI से मसौदा बनवाने का तरीका, 21 दिन की समय-सीमा और 30 दिन की अपील। 15 मिनट में तैयारी करें।",
+    "keyPoints": [
+      "पोर्टल की FAQ के अनुसार निपटारे की समय-सीमा 21 दिन है और देरी पर कारण सहित अंतरिम जवाब देना होता है; कुछ निजी पन्नों पर लिखा 60 दिन पुराना मेल है",
+      "पोर्टल के पन्ने पर लिखा है कि शिकायत केवल पंजीकृत उपयोगकर्ता दर्ज कर सकते हैं, और जमा करने पर अनूठी पंजीकरण संख्या मिलती है",
+      "AI को तारीख़ों वाले तथ्य, पुरानी शिकायत संख्या और माँग दीजिए; नाम, फ़ोन, पता, आधार या खाता संख्या फ़ॉर्म में ख़ुद भरिए",
+      "AI के जोड़े कानून, तारीख़ और रकम अपने काग़ज़ों से मिलाइए; असंतोष हो तो FAQ के अनुसार 30 दिन के भीतर अपील कीजिए",
+      "ये जानकारी 10 नवंबर 2026 तक की है; समय-सीमा और फ़ॉर्म की सीमाएँ बदल सकती हैं"
+    ],
+    "image": "assets/img/cpgrams-shikayat-kaise-darj-kare-ai.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "CPGRAMS पर शिकायत कैसे दर्ज करें, और AI से मसौदा बनवाते समय क्या सावधानी रखें? पोर्टल की FAQ के आधार पर पंजीकरण के क़दम, नमूना प्रॉम्प्ट, 21 दिन की समय-सीमा और अपील का तरीका यहाँ है।",
+    "batch": 33,
+    "readingTime": 7,
+    "url": "articles/cpgrams-shikayat-kaise-darj-kare-ai.html",
+    "imageFull": "assets/img/cpgrams-shikayat-kaise-darj-kare-ai.png",
+    "imageCard": "assets/img/cpgrams-shikayat-kaise-darj-kare-ai.png"
+  },
+  {
     "id": "art-0032",
     "slug": "python-error-kaise-thik-kare-ai",
     "title": "Python एरर कैसे ठीक करें: AI को चिपकाने से पहले 5 क़दम",
