@@ -1,5 +1,31 @@
 [
   {
+    "id": "art-0037",
+    "slug": "chatgpt-medical-report-padhna-sahi",
+    "title": "ChatGPT से मेडिकल रिपोर्ट पढ़ना सही है? समझें, इलाज तय न करें",
+    "seoTitle": "ChatGPT से मेडिकल रिपोर्ट पढ़ना सही है? | TECH RWT AI",
+    "date": "2026-11-14",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "ChatGPT से मेडिकल रिपोर्ट पढ़ना सही है? कहाँ तक ठीक, ऑक्सफ़ोर्ड अध्ययन की चेतावनी, पूछने का तरीका और कब सीधे डॉक्टर के पास जाएँ। अपनी रिपोर्ट पर परखिए।",
+    "keyPoints": [
+      "OpenAI के पन्ने के अनुसार Health अनुभव निदान या इलाज के लिए नहीं है, और तुरंत दिखने वाले लक्षणों में फ़ौरन पेशेवर मदद लेनी चाहिए",
+      "Nature Medicine में 9 फ़रवरी 2026 को छपे अध्ययन में 1,298 लोगों में से चैटबॉट वाले, कहाँ जाना है यह तय करने में बाक़ी समूह से बेहतर नहीं रहे",
+      "चैटबॉट को उम्र, चल रही दवा, रिपोर्ट की संख्या और संदर्भ सीमा दीजिए; नाम, फ़ोन, पता और पहचान संख्या हटाइए",
+      "साँस फूलना, सीने में दर्द या बहुत तेज़ सिरदर्द हो तो चैटबॉट छोड़कर तुरंत इलाज लीजिए; भारत में 112 एकल आपातकालीन नंबर है",
+      "ये जानकारी 14 नवंबर 2026 तक की है; Health की उपलब्धता और सहायता पन्नों के नियम बदल सकते हैं"
+    ],
+    "image": "assets/img/chatgpt-medical-report-padhna-sahi.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "ChatGPT से मेडिकल रिपोर्ट पढ़ना सही है या नहीं? Nature Medicine के अध्ययन, OpenAI के सहायता पन्नों और AP की रिपोर्ट के आधार पर बताया है कि रिपोर्ट में चैटबॉट कहाँ काम आता है, कैसे पूछें और कब सीधे डॉक्टर के पास जाएँ।",
+    "batch": 37,
+    "readingTime": 7,
+    "url": "articles/chatgpt-medical-report-padhna-sahi.html",
+    "imageFull": "assets/img/chatgpt-medical-report-padhna-sahi.png",
+    "imageCard": "assets/img/chatgpt-medical-report-padhna-sahi.png"
+  },
+  {
     "id": "art-0036",
     "slug": "gguf-kya-hai-sahi-quant-chune",
     "title": "GGUF क्या है? Q4_K_M का मतलब और सही फ़ाइल कैसे चुनें",
