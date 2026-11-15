@@ -1,5 +1,31 @@
 [
   {
+    "id": "art-0038",
+    "slug": "gemini-se-pdf-summary-kaise-nikale",
+    "title": "Gemini से PDF का सारांश कैसे निकालें: 5 क़दम और 4 जाँच",
+    "seoTitle": "Gemini से PDF का सारांश कैसे निकालें: 4 जाँच | TECH RWT AI",
+    "date": "2026-11-15",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "Gemini से PDF का सारांश कैसे निकालें: फ़ाइल जोड़ने के 5 क़दम, मुफ़्त खाते की 32 हज़ार टोकन सीमा, निजता की सेटिंग और सारांश जाँचने के 4 तरीके। अपनी PDF पर परखिए।",
+    "keyPoints": [
+      "Google के Gemini सहायता पन्ने के अनुसार एक प्रॉम्प्ट में 10 फ़ाइलें जा सकती हैं और हर फ़ाइल 100 MB तक हो सकती है; फ़ाइल न पढ़ी जाए तो Google उसे दोबारा जोड़ने की सलाह देता है",
+      "बिना AI प्लान वाले खाते में पढ़ने की सीमा 32 हज़ार टोकन है, AI Plus में 128 हज़ार और AI Pro व AI Ultra में 10 लाख; Google के अनुपात से 32 हज़ार लगभग 48 पृष्ठ बैठती है (हमारा हिसाब)",
+      "सारांश की 4 जाँच: 3 बिंदुओं की पृष्ठ संख्या मूल PDF में खोलिए, संख्या-तारीख़ मिलाइए, फ़ाइल में न मौजूद सवाल पूछिए और आख़िरी अध्याय से एक सवाल पूछिए",
+      "Google के 26 अक्टूबर 2026 को अपडेट हुए गोपनीयता पन्ने के अनुसार Keep Activity चालू हो तो अपलोड सेव होते हैं और समीक्षक चैट पढ़ सकते हैं; गोपनीय PDF न जोड़ें",
+      "ये जानकारी 15 नवंबर 2026 तक की है; फ़ाइल की सीमा, संदर्भ सीमा, प्लान और बटन के नाम बदल सकते हैं"
+    ],
+    "image": "assets/img/gemini-se-pdf-summary-kaise-nikale.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "Gemini से PDF का सारांश कैसे निकालें, और उसे कितना सच मानें? Google के सहायता पन्नों के आधार पर फ़ाइल जोड़ने के 5 क़दम, मुफ़्त खाते की पढ़ने की सीमा, निजता की सेटिंग और सारांश परखने की 4 जाँच यहाँ हैं।",
+    "batch": 38,
+    "readingTime": 8,
+    "url": "articles/gemini-se-pdf-summary-kaise-nikale.html",
+    "imageFull": "assets/img/gemini-se-pdf-summary-kaise-nikale.png",
+    "imageCard": "assets/img/gemini-se-pdf-summary-kaise-nikale.png"
+  },
+  {
     "id": "art-0037",
     "slug": "chatgpt-medical-report-padhna-sahi",
     "title": "ChatGPT से मेडिकल रिपोर्ट पढ़ना सही है? समझें, इलाज तय न करें",
