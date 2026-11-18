@@ -1,5 +1,57 @@
 [
   {
+    "id": "art-0040",
+    "slug": "hindi-me-bolkar-type-kaise-kare",
+    "title": "हिंदी में बोलकर टाइप कैसे करें: Windows में 5 क़दम और जाँच",
+    "seoTitle": "हिंदी में बोलकर टाइप कैसे करें: 5 क़दम | TECH RWT AI",
+    "date": "2026-11-18",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "हिंदी में बोलकर टाइप कैसे करें? Windows की Voice Typing के 5 क़दम, Google Docs का तरीका, बोलकर विराम चिह्न डालने के आदेश और नाम-संख्या की 4 जाँच यहाँ पढ़िए।",
+    "keyPoints": [
+      "Microsoft के सहायता पन्ने के अनुसार Windows 11 में Voice Typing के लिए इंटरनेट, चालू माइक और टेक्स्ट बॉक्स में कर्सर चाहिए; हिंदी समर्थित भाषाओं की सूची में है",
+      "Windows कुंजी और H से शुरू करें, Windows कुंजी और Spacebar से भाषा बदलें, और “सुनना रोकें” कहकर रोकें",
+      "Google Docs Editors Help के अनुसार संपादन के आदेश सिर्फ़ अंग्रेज़ी में हैं और इसके लिए खाते व दस्तावेज़ की भाषा अंग्रेज़ी होनी चाहिए",
+      "संख्या, तारीख़, नाम और विराम चिह्न हर बार मूल से मिलाइए; पासवर्ड, OTP और आधार संख्या हाथ से टाइप कीजिए",
+      "ये जानकारी 18 नवंबर 2026 तक की है; मेन्यू के नाम और भाषा-सूची बदल सकती है"
+    ],
+    "image": "assets/img/hindi-me-bolkar-type-kaise-kare.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "हिंदी में बोलकर टाइप कैसे करें, और बोले हुए टेक्स्ट पर कितना भरोसा करें? Microsoft और Google के सहायता पन्नों के आधार पर Windows और Google Docs के क़दम, बोलकर विराम चिह्न डालने के आदेश और जाँच की आदतें यहाँ हैं।",
+    "batch": 40,
+    "readingTime": 5,
+    "url": "articles/hindi-me-bolkar-type-kaise-kare.html",
+    "imageFull": "assets/img/hindi-me-bolkar-type-kaise-kare.png",
+    "imageCard": "assets/img/hindi-me-bolkar-type-kaise-kare.png"
+  },
+  {
+    "id": "art-0039",
+    "slug": "vibe-coding-kya-hai-pehla-app",
+    "title": "वाइब कोडिंग क्या है? बिना कोडिंग सीखे पहला ऐप बनाने के 5 क़दम",
+    "seoTitle": "वाइब कोडिंग क्या है? पहला ऐप बनाने के 5 क़दम | TECH RWT AI",
+    "date": "2026-11-18",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "वाइब कोडिंग क्या है और बिना कोडिंग सीखे पहला ऐप कैसे बनाएँ? Collins की परिभाषा, Veracode का 45% आँकड़ा और 30 मिनट की जाँच के 5 क़दम यहाँ पढ़िए।",
+    "keyPoints": [
+      "Collins Dictionary ने 6 नवंबर 2025 को Vibe Coding को साल 2025 का शब्द चुना; परिभाषा का सार है AI से प्राकृतिक भाषा के निर्देश पर कोड लिखवाना",
+      "Veracode की 30 जुलाई 2025 की रिपोर्ट में 100 से ज़्यादा मॉडलों के 80 कामों में से 45% परीक्षणों में सुरक्षा की कमज़ोरी मिली",
+      "पहला ऐप: एक काम, 3 हाथ से निकाले नमूना जवाब, एक HTML फ़ाइल, कोई लॉगिन या डेटाबेस नहीं",
+      "GitHub Docs के अनुसार हटाई गई कुंजी भी Git के इतिहास में रहती है, इसलिए उसे रद्द करके दूसरी बनाइए",
+      "ये जानकारी 18 नवंबर 2026 तक की है; टूल और सेटिंग के नाम बदल सकते हैं"
+    ],
+    "image": "assets/img/vibe-coding-kya-hai-pehla-app.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "वाइब कोडिंग क्या है और कोडिंग जाने बिना इससे पहला ऐप कैसे बनता है? Collins की परिभाषा, Veracode के सुरक्षा आँकड़े, कुंजी लीक से बचाव और ब्याज निकालने वाले पेज की 30 मिनट की जाँच यहाँ है।",
+    "batch": 39,
+    "readingTime": 5,
+    "url": "articles/vibe-coding-kya-hai-pehla-app.html",
+    "imageFull": "assets/img/vibe-coding-kya-hai-pehla-app.png",
+    "imageCard": "assets/img/vibe-coding-kya-hai-pehla-app.png"
+  },
+  {
     "id": "art-0038",
     "slug": "gemini-se-pdf-summary-kaise-nikale",
     "title": "Gemini से PDF का सारांश कैसे निकालें: 5 क़दम और 4 जाँच",
