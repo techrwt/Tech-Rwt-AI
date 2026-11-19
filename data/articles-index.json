@@ -1,5 +1,57 @@
 [
   {
+    "id": "art-0042",
+    "slug": "asli-nakli-photo-kaise-pehchane",
+    "title": "असली और नकली फोटो कैसे पहचानें: Verify टूल से 4 जाँच",
+    "seoTitle": "असली और नकली फोटो कैसे पहचानें: 4 जाँच | TECH RWT AI",
+    "date": "2026-11-19",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "असली और नकली फोटो कैसे पहचानें? Content Credentials का मुफ़्त Verify टूल क्या दिखाता है, रिकॉर्ड न मिले तो क्या करें और भेजने वाले से क्या माँगें, 4 जाँच में।",
+    "keyPoints": [
+      "CAI के Verify पन्ने के अनुसार फ़ाइल अपलोड करके या सार्वजनिक वेब पते से Content Credentials देखे जा सकते हैं; रिकॉर्ड न हो तो टूल “No Content Credential” लिखता है",
+      "रिकॉर्ड न मिलने से तस्वीर असली या नकली, कुछ साबित नहीं होता; स्क्रीनशॉट में जुड़ा रिकॉर्ड अक्सर खो जाता है, इसलिए मूल फ़ाइल माँगिए",
+      "Google के ब्लॉग के अनुसार “इस इमेज के बारे में” सुविधा तस्वीर का इतिहास, दूसरी साइटों में इस्तेमाल और उपलब्ध मेटाडेटा दिखाती है",
+      "वैध रिकॉर्ड भी सामग्री की सच्चाई साबित नहीं करता, इसलिए उसे बाक़ी जाँचों में से एक संकेत मानिए",
+      "ये जानकारी 19 नवंबर 2026 तक की है; टूल और फ़ीचर बदल सकते हैं"
+    ],
+    "image": "assets/img/asli-nakli-photo-kaise-pehchane.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "असली और नकली फोटो कैसे पहचानें, जब वॉटरमार्क और अंदाज़े काफ़ी नहीं हैं? CAI और Google के पन्नों के आधार पर Verify टूल का नतीजा पढ़ने का तरीक़ा, 4 जाँच और रिकॉर्ड न मिलने पर आगे के क़दम यहाँ हैं।",
+    "batch": 42,
+    "readingTime": 5,
+    "url": "articles/asli-nakli-photo-kaise-pehchane.html",
+    "imageFull": "assets/img/asli-nakli-photo-kaise-pehchane.png",
+    "imageCard": "assets/img/asli-nakli-photo-kaise-pehchane.png"
+  },
+  {
+    "id": "art-0041",
+    "slug": "context-window-kya-hoti-hai-ai",
+    "title": "कॉन्टेक्स्ट विंडो क्या होती है? लंबी चैट में AI भूलता क्यों है",
+    "seoTitle": "कॉन्टेक्स्ट विंडो क्या होती है? भूलता क्यों | TECH RWT AI",
+    "date": "2026-11-19",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "कॉन्टेक्स्ट विंडो क्या होती है और लंबी चैट में AI पुरानी बात क्यों भूलता है? Anthropic और Google के दस्तावेज़ों के आधार पर 5 उपाय और 10 मिनट की जाँच पढ़िए।",
+    "keyPoints": [
+      "Anthropic के कॉन्टेक्स्ट विंडो वाले दस्तावेज़ के अनुसार कॉन्टेक्स्ट विंडो वो सारा टेक्स्ट है जिसे मॉडल जवाब देते समय देख सकता है, जवाब समेत; इसे मॉडल की कार्यशील याददाश्त कहा गया है",
+      "Anthropic के अनुसार टोकन बढ़ने पर सटीकता और याद रखने की क्षमता घटती है (कॉन्टेक्स्ट रॉट), और claude.ai जैसे चैट ऐप सबसे पुराने संदेश हटाकर भी विंडो सँभाल सकते हैं",
+      "Google के Gemini API दस्तावेज़ के अनुसार कई बातें एक साथ ढूँढवाने पर सटीकता घट सकती है, और लंबे संदर्भ में सवाल अंत में रखना ज़्यादातर बेहतर रहता है",
+      "5 उपाय: दूसरी चैट, बीच में सार, सवाल अंत में, सिर्फ़ ज़रूरी हिस्सा, और बड़े दस्तावेज़ के लिए RAG",
+      "ये जानकारी 19 नवंबर 2026 तक की है; विंडो का आकार और ऐप का बर्ताव बदल सकता है"
+    ],
+    "image": "assets/img/context-window-kya-hoti-hai-ai.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "कॉन्टेक्स्ट विंडो क्या होती है, और लंबी चैट में AI पुरानी बात क्यों भूल जाता है? Anthropic और Google के दस्तावेज़ों के आधार पर विंडो का मतलब, टोकन का हिसाब, 5 उपाय और अपनी चैट पर 10 मिनट की जाँच यहाँ है।",
+    "batch": 41,
+    "readingTime": 5,
+    "url": "articles/context-window-kya-hoti-hai-ai.html",
+    "imageFull": "assets/img/context-window-kya-hoti-hai-ai.png",
+    "imageCard": "assets/img/context-window-kya-hoti-hai-ai.png"
+  },
+  {
     "id": "art-0040",
     "slug": "hindi-me-bolkar-type-kaise-kare",
     "title": "हिंदी में बोलकर टाइप कैसे करें: Windows में 5 क़दम और जाँच",
