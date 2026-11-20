@@ -1,5 +1,57 @@
 [
   {
+    "id": "art-0044",
+    "slug": "dpi-kya-hai-ai-image-print",
+    "title": "DPI क्या है? AI इमेज को प्रिंट के लिए तैयार करने के 4 क़दम",
+    "seoTitle": "DPI क्या है? AI इमेज प्रिंट के 4 क़दम | TECH RWT AI",
+    "date": "2026-11-20",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "DPI क्या है और AI से बनी इमेज प्रिंट में धुंधली क्यों आती है? पिक्सेल से छपाई का आकार निकालने का सूत्र, 300 और 150 DPI की तालिका और 4 क़दम यहाँ पढ़िए।",
+    "keyPoints": [
+      "VistaPrint के 19 अप्रैल 2024 के पन्ने के अनुसार व्यावसायिक छपाई का मानक 300 DPI है, और ऑनलाइन इमेज का मानक 72 PPI है",
+      "सूत्र: छपाई का आकार (इंच) = पिक्सेल ÷ DPI; 3000 पिक्सेल की इमेज 300 DPI पर 10 इंच और 150 DPI पर 20 इंच छपती है",
+      "VistaPrint के अनुसार 150 DPI दूर से देखे जाने वाले पोस्टर और साइनेज के लिए न्यूनतम सुझाया गया है; टेक्स्ट वाली इमेज के लिए अक्सर 400 DPI",
+      "Canva की सहायता के अनुसार छपाई का न्यूनतम सुझाया रेज़ॉल्यूशन 300 DPI है; PDF प्रूफ़ अपने प्रिंटर पर छापकर परखिए",
+      "ये जानकारी 20 नवंबर 2026 तक की है; छपाई करने वाले की अपनी शर्त अलग हो सकती है"
+    ],
+    "image": "assets/img/dpi-kya-hai-ai-image-print.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "DPI क्या है, और AI से बनी इमेज प्रिंट में धुंधली क्यों आती है? VistaPrint और Canva के पन्नों के आधार पर पिक्सेल से छपाई का आकार निकालने का सूत्र, 300 और 150 DPI की तालिका और अपनी इमेज की 15 मिनट की जाँच यहाँ है।",
+    "batch": 44,
+    "readingTime": 5,
+    "url": "articles/dpi-kya-hai-ai-image-print.html",
+    "imageFull": "assets/img/dpi-kya-hai-ai-image-print.png",
+    "imageCard": "assets/img/dpi-kya-hai-ai-image-print.png"
+  },
+  {
+    "id": "art-0043",
+    "slug": "hugging-face-kya-hai-model-download",
+    "title": "हगिंग फेस क्या है? मॉडल डाउनलोड से पहले की 4 जाँच",
+    "seoTitle": "हगिंग फेस क्या है? डाउनलोड से पहले 4 जाँच | TECH RWT AI",
+    "date": "2026-11-20",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "हगिंग फेस क्या है और वहाँ से AI मॉडल उतारने से पहले क्या देखें? फ़ाइल का प्रारूप, पिकल का ख़तरा, लाइसेंस और प्रकाशक की 4 जाँच, 15 मिनट की परख के साथ।",
+    "keyPoints": [
+      "Hugging Face के दस्तावेज़ के अनुसार Hub मॉडल, डेमो, डेटासेट और मेट्रिक्स साझा करने की जगह है; निजी रिपॉज़िटरी जैसे कई कामों के लिए खाते और टोकन से पहचान चाहिए",
+      "4 जाँच: प्रकाशक, फ़ाइल का प्रारूप, लाइसेंस और आकार (अपनी RAM से मिलाकर)",
+      "Pickle Scanning पन्ने के अनुसार पिकल फ़ाइल लोड करते समय कोड चल सकता है; Hub की ClamAV और इंपोर्ट जाँच सौ प्रतिशत भरोसेमंद नहीं है",
+      "Licenses पन्ने के अनुसार लाइसेंस README के मेटाडेटा में होता है; Other या Unknown हो तो LICENSE फ़ाइल का पाठ ख़ुद पढ़िए",
+      "ये जानकारी 20 नवंबर 2026 तक की है; Hub की सुविधाएँ और सूचियाँ बदल सकती हैं"
+    ],
+    "image": "assets/img/hugging-face-kya-hai-model-download.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "हगिंग फेस क्या है, और वहाँ से AI मॉडल उतारना कितना सुरक्षित है? Hugging Face के दस्तावेज़ों के आधार पर प्रकाशक, फ़ाइल-प्रारूप, पिकल का ख़तरा और लाइसेंस की 4 जाँच, और अपने पहले मॉडल-पन्ने की 15 मिनट की परख यहाँ है।",
+    "batch": 43,
+    "readingTime": 5,
+    "url": "articles/hugging-face-kya-hai-model-download.html",
+    "imageFull": "assets/img/hugging-face-kya-hai-model-download.png",
+    "imageCard": "assets/img/hugging-face-kya-hai-model-download.png"
+  },
+  {
     "id": "art-0042",
     "slug": "asli-nakli-photo-kaise-pehchane",
     "title": "असली और नकली फोटो कैसे पहचानें: Verify टूल से 4 जाँच",
