@@ -22,8 +22,8 @@
     "batch": 44,
     "readingTime": 5,
     "url": "articles/dpi-kya-hai-ai-image-print.html",
-    "imageFull": "assets/img/dpi-kya-hai-ai-image-print.png",
-    "imageCard": "assets/img/dpi-kya-hai-ai-image-print.png"
+    "imageFull": "assets/img/dpi-kya-hai-ai-image-print.webp",
+    "imageCard": "assets/img/dpi-kya-hai-ai-image-print-600.webp"
   },
   {
     "id": "art-0043",
@@ -48,8 +48,8 @@
     "batch": 43,
     "readingTime": 5,
     "url": "articles/hugging-face-kya-hai-model-download.html",
-    "imageFull": "assets/img/hugging-face-kya-hai-model-download.png",
-    "imageCard": "assets/img/hugging-face-kya-hai-model-download.png"
+    "imageFull": "assets/img/hugging-face-kya-hai-model-download.webp",
+    "imageCard": "assets/img/hugging-face-kya-hai-model-download-600.webp"
   },
   {
     "id": "art-0042",
