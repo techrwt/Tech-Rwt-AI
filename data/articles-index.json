@@ -1,5 +1,31 @@
 [
   {
+    "id": "art-0046",
+    "slug": "ai-se-sql-query-kaise-likhwaye",
+    "title": "AI से SQL क्वेरी कैसे लिखवाएँ: चलाने से पहले की 4 जाँच",
+    "seoTitle": "AI से SQL क्वेरी कैसे लिखवाएँ: 4 जाँच | TECH RWT AI",
+    "date": "2026-11-21",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "AI से SQL क्वेरी कैसे लिखवाएँ कि डेटा न बिगड़े? प्रॉम्प्ट में क्या दें, DELETE में WHERE और NULL की चूक, नमूना डेटा पर Python से परखने की 4 जाँच यहाँ पढ़िए।",
+    "keyPoints": [
+      "AI को तालिका का ढाँचा और 3 से 4 बनावटी पंक्तियाँ दीजिए, असली ग्राहक डेटा नहीं; प्रॉम्प्ट में सिर्फ़ SELECT वाली क्वेरी माँगिए",
+      "SQLite के DELETE पन्ने के अनुसार WHERE न हो तो तालिका की सारी पंक्तियाँ हटती हैं; शर्त ग़लत या NULL निकले तो पंक्ति बची रहती है",
+      "Python के दस्तावेज़ के अनुसार RAM में अस्थायी डेटाबेस खुल सकता है, INSERT के बाद con.commit चाहिए और con.rollback आख़िरी सहेजने के बाद के बदलाव लौटाता है",
+      "4 जाँच: क्वेरी का प्रकार, WHERE, नमूना डेटा पर नतीजा, और असली डेटा पर चलाने से पहले कॉपी व गिनती",
+      "ये जानकारी 21 नवंबर 2026 तक की है; आपका डेटाबेस SQLite से अलग हो तो उसका दस्तावेज़ देखिए"
+    ],
+    "image": "assets/img/ai-se-sql-query-kaise-likhwaye.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "AI से SQL क्वेरी कैसे लिखवाएँ ताकि डेटा सुरक्षित रहे? SQLite और Python के दस्तावेज़ों के आधार पर प्रॉम्प्ट में क्या दें, DELETE में WHERE और NULL की चूक, और चार पंक्तियों के परीक्षण की 10 मिनट की जाँच यहाँ है।",
+    "batch": 46,
+    "readingTime": 5,
+    "url": "articles/ai-se-sql-query-kaise-likhwaye.html",
+    "imageFull": "assets/img/ai-se-sql-query-kaise-likhwaye.png",
+    "imageCard": "assets/img/ai-se-sql-query-kaise-likhwaye.png"
+  },
+  {
     "id": "art-0045",
     "slug": "google-colab-kya-hai-free-gpu",
     "title": "Google Colab क्या है? कितना मुफ़्त है और किन कामों पर रोक है",
