@@ -1,5 +1,31 @@
 [
   {
+    "id": "art-0045",
+    "slug": "google-colab-kya-hai-free-gpu",
+    "title": "Google Colab क्या है? कितना मुफ़्त है और किन कामों पर रोक है",
+    "seoTitle": "Google Colab क्या है? कितना मुफ़्त है | TECH RWT AI",
+    "date": "2026-11-21",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "Google Colab क्या है और मुफ़्त GPU पर AI चलाने की असली सीमाएँ क्या हैं? FAQ के आधार पर 12 घंटे की सीमा, रोक वाले काम, 5 क़दम और 10 मिनट की जाँच पढ़िए।",
+    "keyPoints": [
+      "Colab के FAQ के अनुसार सेवा मुफ़्त है, पर संसाधन गारंटीशुदा या असीमित नहीं हैं; सीमाएँ, GPU के प्रकार और निष्क्रियता का टाइमआउट समय के साथ बदलते हैं और Colab इन्हें प्रकाशित नहीं करता",
+      "मुफ़्त स्तर पर नोटबुक अधिकतम 12 घंटे चल सकती है, उपलब्धता और उपयोग पर निर्भर; Pro+ में पर्याप्त कंप्यूट यूनिट हों तो 24 घंटे तक लगातार",
+      "GPU रनटाइम चुनने से कोड अपने आप GPU इस्तेमाल नहीं करता; GPU न चाहिए तो Hardware Accelerator को None कीजिए",
+      "मुफ़्त स्तर पर वेब UI, SSH, रिमोट डेस्कटॉप और डिस्ट्रीब्यूटेड वर्कर बिना चेतावनी बंद हो सकते हैं; डीपफेक, टोरेंट और क्रिप्टो माइनिंग हर रनटाइम पर मना हैं",
+      "ये जानकारी 21 नवंबर 2026 तक की है; Colab की सीमाएँ, योजनाएँ और मेन्यू बदल सकते हैं"
+    ],
+    "image": "assets/img/google-colab-kya-hai-free-gpu.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "Google Colab क्या है, और मुफ़्त GPU पर AI चलाना कितना भरोसेमंद है? Colab के FAQ के आधार पर 12 घंटे की सीमा, रोक वाले काम, GPU चालू करने के 5 क़दम और अपने काम के लिए 10 मिनट की जाँच यहाँ है।",
+    "batch": 45,
+    "readingTime": 7,
+    "url": "articles/google-colab-kya-hai-free-gpu.html",
+    "imageFull": "assets/img/google-colab-kya-hai-free-gpu.png",
+    "imageCard": "assets/img/google-colab-kya-hai-free-gpu.png"
+  },
+  {
     "id": "art-0044",
     "slug": "dpi-kya-hai-ai-image-print",
     "title": "DPI क्या है? AI इमेज को प्रिंट के लिए तैयार करने के 4 क़दम",
