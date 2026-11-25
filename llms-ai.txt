@@ -1,0 +1,73 @@
+# TECH RWT AI
+
+> TECH RWT AI (techrawatai.sbs) is a Hindi-only website about AI. It publishes simple, practical Hindi/Hinglish guides on AI basics, AI tools, running AI locally, everyday tasks with AI, AI safety and scams, and government services with AI help. Articles are updated regularly.
+
+## Main pages
+- [Home](https://techrawatai.sbs/): Latest AI articles
+- [About](https://techrawatai.sbs/about.html): About the site
+- [Social](https://techrawatai.sbs/social.html): Social media links
+- [Contact](https://techrawatai.sbs/contact.html): Contact details
+
+## AI basics
+- [Knowledge cutoff in AI](https://techrawatai.sbs/articles/knowledge-cutoff-kya-hai-ai.html)
+- [Context window explained](https://techrawatai.sbs/articles/context-window-kya-hoti-hai-ai.html)
+- [What is a token in AI](https://techrawatai.sbs/articles/token-kya-hota-hai-ai-hindi.html)
+- [AI hallucination explained](https://techrawatai.sbs/articles/ai-hallucination-kya-hai.html)
+- [What is Generative AI](https://techrawatai.sbs/articles/generative-ai-kya-hai.html)
+- [What is an AI agent](https://techrawatai.sbs/articles/ai-agent-kya-hai-hindi.html)
+- [What is RAG](https://techrawatai.sbs/articles/rag-kya-hai-ai-hindi.html)
+- [Fine-tuning vs RAG, which to use](https://techrawatai.sbs/articles/fine-tuning-vs-rag-kaun-sa.html)
+- [What is vibe coding, build your first app](https://techrawatai.sbs/articles/vibe-coding-kya-hai-pehla-app.html)
+- [Gemini 4 Argon: access, pricing, features](https://techrawatai.sbs/articles/gemini-4-argon-access-pricing-features.html)
+
+## Run AI locally and developer tools
+- [Run AI on a laptop with Ollama](https://techrawatai.sbs/articles/run-ai-on-laptop-ollama.html)
+- [Ollama vs LM Studio, which one](https://techrawatai.sbs/articles/ollama-ya-lm-studio-kaun-sa.html)
+- [LM Studio: offline AI](https://techrawatai.sbs/articles/lm-studio-kya-hai-offline-ai.html)
+- [GGUF explained, choosing the right quant](https://techrawatai.sbs/articles/gguf-kya-hai-sahi-quant-chune.html)
+- [Hugging Face and model downloads](https://techrawatai.sbs/articles/hugging-face-kya-hai-model-download.html)
+- [Google Colab and free GPU](https://techrawatai.sbs/articles/google-colab-kya-hai-free-gpu.html)
+- [n8n free automation](https://techrawatai.sbs/articles/n8n-kya-hai-free-automation.html)
+- [GitHub Pages for an AI-built website](https://techrawatai.sbs/articles/github-pages-kya-hai-ai-website.html)
+
+## Everyday tasks with AI
+- [Write SQL queries with AI](https://techrawatai.sbs/articles/ai-se-sql-query-kaise-likhwaye.html)
+- [Fix Python errors with AI](https://techrawatai.sbs/articles/python-error-kaise-thik-kare-ai.html)
+- [Write Excel formulas with ChatGPT](https://techrawatai.sbs/articles/chatgpt-excel-formula-kaise-likhe.html)
+- [Make Google Sheets macros with AI](https://techrawatai.sbs/articles/google-sheets-macro-ai-se-banaye.html)
+- [Make PPT slides with AI in Hindi](https://techrawatai.sbs/articles/ai-se-ppt-kaise-banaye-hindi.html)
+- [Summarize PDFs with Gemini](https://techrawatai.sbs/articles/gemini-se-pdf-summary-kaise-nikale.html)
+- [Type in Hindi by speaking](https://techrawatai.sbs/articles/hindi-me-bolkar-type-kaise-kare.html)
+- [Extract Hindi text from photos](https://techrawatai.sbs/articles/photo-se-text-nikale-hindi.html)
+- [Hindi audio to text with Whisper](https://techrawatai.sbs/articles/whisper-se-hindi-audio-text.html)
+- [How Hindi AI voices are made](https://techrawatai.sbs/articles/hindi-ai-voice-kaise-banate-hain.html)
+- [ChatGPT Hindi voice](https://techrawatai.sbs/articles/chatgpt-hindi-voice-neer-leher.html)
+- [Google Translate vs AI chatbot for Hindi](https://techrawatai.sbs/articles/google-translate-ya-ai-chatbot-hindi.html)
+- [Bhashini app for translation](https://techrawatai.sbs/articles/bhashini-app-kya-hai-anuvad.html)
+- [Perplexity alternatives for AI search](https://techrawatai.sbs/articles/perplexity-ke-vikalp-ai-search.html)
+- [Is reading medical reports with ChatGPT safe](https://techrawatai.sbs/articles/chatgpt-medical-report-padhna-sahi.html)
+
+## Creators and AI content
+- [AI content labelling, IT rules for creators](https://techrawatai.sbs/articles/ai-content-labelling-it-rules-creator.html)
+- [YouTube AI video label, how to add](https://techrawatai.sbs/articles/youtube-ai-video-label-kaise-lagaye.html)
+- [Make YouTube thumbnails with AI](https://techrawatai.sbs/articles/ai-se-youtube-thumbnail-kaise-banaye.html)
+- [Make a logo with AI, 4 trademark checks](https://techrawatai.sbs/articles/ai-se-logo-kaise-banaye-trademark-ki-4-jaanch.html)
+- [DPI for printing AI images](https://techrawatai.sbs/articles/dpi-kya-hai-ai-image-print.html)
+
+## AI safety and scams
+- [Spot real vs fake photos](https://techrawatai.sbs/articles/asli-nakli-photo-kaise-pehchane.html)
+- [Spot deepfake videos](https://techrawatai.sbs/articles/deepfake-video-kaise-pehchane.html)
+- [Avoid AI voice cloning scams](https://techrawatai.sbs/articles/ai-voice-cloning-scam-kaise-bache.html)
+- [Spot fake apps](https://techrawatai.sbs/articles/fake-app-kaise-pehchane-ai.html)
+- [Spot fraudulent apps](https://techrawatai.sbs/articles/farji-app-kaise-pehchane-ai.html)
+- [What not to tell AI](https://techrawatai.sbs/articles/ai-ko-kya-nahi-batana-chahiye.html)
+- [Remove Meta AI from WhatsApp](https://techrawatai.sbs/articles/whatsapp-se-meta-ai-kaise-hataye.html)
+
+## Government services with AI
+- [File a CPGRAMS complaint with AI help](https://techrawatai.sbs/articles/cpgrams-shikayat-kaise-darj-kare-ai.html)
+- [Write an RTI application with an AI draft](https://techrawatai.sbs/articles/rti-aavedan-kaise-kare-ai-masauda.html)
+- [How MyScheme works](https://techrawatai.sbs/articles/myscheme-kaise-kaam-karta-hai.html)
+
+## About
+- [Privacy Policy](https://techrawatai.sbs/privacy-policy.html)
+- [Terms](https://techrawatai.sbs/terms.html)
