@@ -1,5 +1,31 @@
 [
   {
+    "id": "art-0050",
+    "slug": "open-source-ai-vs-open-weight",
+    "title": "ओपन सोर्स AI क्या है? ओपन वेट से फ़र्क और मॉडल चुनने की 4 जाँच",
+    "seoTitle": "ओपन सोर्स AI क्या है? ओपन वेट से फ़र्क | TECH RWT AI",
+    "date": "2026-11-26",
+    "author": "TECH RAWAT AI टीम",
+    "featured": false,
+    "trending": false,
+    "searchDescription": "ओपन सोर्स AI क्या है और ओपन वेट से कैसे अलग है? OSI की परिभाषा, कौन से मॉडल जाँच में पास या फ़ेल हुए, और मॉडल चुनने से पहले 4 जाँच और 10 मिनट की परख पढ़िए।",
+    "keyPoints": [
+      "OSI की परिभाषा के अनुसार ओपन सोर्स AI में कोड, प्रशिक्षण के डेटा की जानकारी और पैरामीटर, तीनों OSI-मान्य शर्तों पर चाहिए; सिर्फ़ वेट देना काफ़ी नहीं",
+      "OSI के FAQ के अनुसार प्रशिक्षण का पूरा डेटा देना ज़रूरी नहीं, पर उसकी इतनी जानकारी चाहिए कि जानकार व्यक्ति मिलता-जुलता सिस्टम बना सके",
+      "OSI के FAQ के 17 जून 2025 के संस्करण में Pythia, OLMo, Amber, CrystalCoder और T5 जाँच में पास हुए; Llama2, Grok, Phi-2 और Mixtral पास नहीं हुए (ये प्रमाणपत्र नहीं हैं)",
+      "4 जाँच: शर्तों का नाम, सिर्फ़ वेट या कोड व डेटा की जानकारी भी, उपयोग की सीमाएँ, और फ़ाइल का प्रारूप व स्रोत",
+      "ये जानकारी 26 नवंबर 2026 तक की है; परिभाषा, FAQ और मॉडल की शर्तें बदल सकती हैं"
+    ],
+    "image": "assets/img/open-source-ai-vs-open-weight.png",
+    "imageCredit": "TECH RWT AI",
+    "excerpt": "ओपन सोर्स AI क्या है और ओपन वेट से कैसे अलग है? OSI की परिभाषा और FAQ के आधार पर कौन से हिस्से चाहिए, कौन से मॉडल जाँच में पास या फ़ेल हुए, और अपने मॉडल पर 4 जाँच और 10 मिनट की परख यहाँ है।",
+    "batch": 50,
+    "readingTime": 5,
+    "url": "articles/open-source-ai-vs-open-weight.html",
+    "imageFull": "assets/img/open-source-ai-vs-open-weight.png",
+    "imageCard": "assets/img/open-source-ai-vs-open-weight.png"
+  },
+  {
     "id": "art-0049",
     "slug": "bachchon-ke-liye-ai-chatbot-surakshit",
     "title": "बच्चों के लिए कितना सुरक्षित है AI चैटबॉट? माता-पिता की 5 सेटिंग",
